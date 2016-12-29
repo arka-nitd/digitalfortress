@@ -62,10 +62,11 @@ class MainController extends Controller
         $utoken = session('user_id');
         $current = leaderboard::where('id',$utoken)->select('round_id')->first();
         $current=$current['round_id'];
-        if(($rid==1 && $qid>4) || ($rid==2 && $qid>9) || ($rid==3 && $qid>14) || ($rid==4 && $qid>19) || ($rid==5 && $qid>22))
-        {
+        $invalid=0;
+        $qrid = quiz::where('id',$qid)->select('round')->first();
+        $qrid=$qrid['round'];
+        if($qrid>$current)
             $invalid=1;
-        }
         if($rid>$current || $invalid==1)
             return redirect(url('/round/'.$current));
         $quiz = quiz::where('id', $qid)->first();
