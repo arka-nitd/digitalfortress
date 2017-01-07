@@ -23,7 +23,7 @@
     @yield('externcss')
 
 </head>
-<body>
+<body style="overflow: hidden;">
 
     <div class="wrapper">
         <div class="sidebar" data-color="red" data-image="{{ secure_asset('assets/img/sd2.jpg') }}">
