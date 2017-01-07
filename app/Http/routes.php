@@ -30,8 +30,8 @@ Route::group(['middleware' => ['web']], function () {
 	Route::get('login/{id}/callback', 'HomeController@socialcallback');
 	Route::get('logout', 'HomeController@logout');
 	
-    Route::post('login', 'HomeController@login');
-    Route::post('register', 'HomeController@register');
+    Route::post('/login', 'HomeController@login');
+    Route::post('/register', 'HomeController@register');
 
     Route::get('/rules', 'HomeController@rules');
     Route::get('/leaderboard', 'HomeController@lboard');
@@ -43,11 +43,5 @@ Route::group(['middleware' => ['web']], function () {
 
     Route::get('/myprofile', 'HomeController@myprofile');
     Route::post('/updatepassword', 'HomeController@updatepassword');
-
-/*    Route::get('start','HomeController@start');
-    Route::get('/round/{id}','MainController@round');
-    Route::get('/round/{rid}/{qid}', 'MainController@showquestion');
-    Route::post('/check/{qid}','MainController@quesvalidate');
-    Route::post('/round/{id}','MainController@nextround');*/
 
 });

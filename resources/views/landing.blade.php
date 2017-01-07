@@ -9,14 +9,14 @@
         <meta name="viewport" content="width=device-width" />
 
         <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
-        <link href="{{ URL::asset('assets/css/landing-page.css') }}" rel="stylesheet"/>
+        <link href="{{ secure_asset('assets/css/landing-page.css') }}" rel="stylesheet"/>
 
         <!--     Fonts and icons     -->
         <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
         <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400,300' rel='stylesheet' type='text/css'>
 
-        <link href="{{ URL::asset('assets/css/pe-icon-7-stroke.css') }}" rel="stylesheet" />
-        <link href="{{ URL::asset('assets/css/material-dashboard.css') }}" rel="stylesheet" />
+        <link href="{{ secure_asset('assets/css/pe-icon-7-stroke.css') }}" rel="stylesheet" />
+        <link href="{{ secure_asset('assets/css/material-dashboard.css') }}" rel="stylesheet" />
     </head>
     <body class="landing-page landing-page1">
         <nav class="navbar navbar-transparent navbar-top" role="navigation">
@@ -162,8 +162,8 @@
         </div>
 
     </body>
-    <script src="{{ URL::asset('assets/js/jquery-1.10.2.js') }}" type="text/javascript"></script>
-    <script src="{{ URL::asset('assets/js/jquery-ui-1.10.4.custom.min.js') }}" type="text/javascript"></script>
-    <script src="{{ URL::asset('assets/js/bootstrap.js') }}" type="text/javascript"></script>
-    <script src="{{ URL::asset('assets/js/awesome-landing-page.js') }}" type="text/javascript"></script>
+    <script src="{{ secure_asset('assets/js/jquery-1.10.2.js') }}" type="text/javascript"></script>
+    <script src="{{ secure_asset('assets/js/jquery-ui-1.10.4.custom.min.js') }}" type="text/javascript"></script>
+    <script src="{{ secure_asset('assets/js/bootstrap.js') }}" type="text/javascript"></script>
+    <script src="{{ secure_asset('assets/js/awesome-landing-page.js') }}" type="text/javascript"></script>
 </html>
