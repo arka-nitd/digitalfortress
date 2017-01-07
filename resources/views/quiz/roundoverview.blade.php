@@ -162,7 +162,7 @@ function showGoogleMap(e)
       });
     }
     if(locations.length>0)
-    e.fitLatLngBounds(bounds);
+        e.fitLatLngBounds(bounds);
  }
 
 
@@ -186,7 +186,7 @@ $(document).ready(function(){
     });
 
     $('#mymapmodal').on('shown.bs.modal', function (e) {
-        map2 = new GMaps({div: '#map2'});
+        map2 = new GMaps({div: '#map2',lat:23.5501761,lng:87.2875451});
         showGoogleMap(map2);
     });
 
