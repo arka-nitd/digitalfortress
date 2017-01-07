@@ -9,16 +9,16 @@
     <meta name="viewport" content="width=device-width" />
 
     <!-- Bootstrap Core CSS -->
-    <link href="{{ URL::secure_asset('assets/css/bootstrap.min.css') }} " rel="stylesheet" />
+    <link href="{{ URL::asset('assets/css/bootstrap.min.css') }} " rel="stylesheet" />
 
     
     <!-- Material Dashboard CSS -->
-    <link href="{{ URL::secure_asset('assets/css/material-dashboard.css') }}" rel="stylesheet" />
+    <link href="{{ URL::asset('assets/css/material-dashboard.css') }}" rel="stylesheet" />
 
     
     <!-- Fonts And Icons -->
-    <link href="{{ URL::secure_asset('assets/css/font-awesome.min.css') }} " rel="stylesheet" />
-    <link href="{{ URL::secure_asset('assets/css/matico.css') }} " rel='stylesheet' type='text/css'>
+    <link href="{{ URL::asset('assets/css/font-awesome.min.css') }} " rel="stylesheet" />
+    <link href="{{ URL::asset('assets/css/matico.css') }} " rel='stylesheet' type='text/css'>
 
     @yield('externcss')
 
@@ -131,14 +131,14 @@
 @yield('modal')
    
 <!-- Core JS Files -->
-    <script src="{{ URL::secure_asset('assets/js/jquery-3.1.0.min.js') }} " type="text/javascript"></script>
-    <script src="{{ URL::secure_asset('assets/js/bootstrap.min.js') }}" type="text/javascript"></script>
-    <script src="{{ URL::secure_asset('assets/js/material.min.js') }}" type="text/javascript"></script>
+    <script src="{{ URL::asset('assets/js/jquery-3.1.0.min.js') }} " type="text/javascript"></script>
+    <script src="{{ URL::asset('assets/js/bootstrap.min.js') }}" type="text/javascript"></script>
+    <script src="{{ URL::asset('assets/js/material.min.js') }}" type="text/javascript"></script>
 
 
    
     <!-- Material Dashboard javascript methods -->
-    <script src="{{ URL::secure_asset('assets/js/material-dashboard.js') }}"></script>
+    <script src="{{ URL::asset('assets/js/material-dashboard.js') }}"></script>
     
     @yield('myjs')
 
