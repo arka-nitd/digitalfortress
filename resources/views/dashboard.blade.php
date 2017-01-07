@@ -86,19 +86,19 @@
 
 @section('externcss')
 	@if (isset($newusertext))
-		<link href="{{ URL::asset('assets/css/sweetalert.css') }}" rel="stylesheet" />
+		<link href="{{ secure_asset('assets/css/sweetalert.css') }}" rel="stylesheet" />
 	@endif
 @endsection
 
 @section('myjs')
 	@if (isset($newusertext)) 
 		@if ($newusertext!="error")
-		<script src="{{ URL::asset('assets/js/sweetalert.min.js') }}"></script>
+		<script src="{{ secure_asset('assets/js/sweetalert.min.js') }}"></script>
 		<script type="text/javascript">
 			swal({ title:'Thanks for registering !!',text:'{{ $newusertext }}', type:'info'}, function() { document.location.href = '/dashboard' });
 		</script>
 		@else
-		<script src="{{ URL::asset('assets/js/sweetalert.min.js') }}"></script>
+		<script src="{{ secure_asset('assets/js/sweetalert.min.js') }}"></script>
 		<script type="text/javascript">
 			swal({ title:'Email Taken !!',text:'Sorry !! The email id already exists. Try with a different one', type:'error'}, function() { document.location.href = '/dashboard' });
 		</script>
