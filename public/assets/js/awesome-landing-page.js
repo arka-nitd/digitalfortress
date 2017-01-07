@@ -1,5 +1,5 @@
         var big_image;
-        $().ready(function() {
+        $(document).ready(function() {
             $('.selector').click(function() {
                 SelectColor(this);
             });
