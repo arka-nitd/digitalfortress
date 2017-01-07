@@ -121,16 +121,16 @@
 @endsection
 
 @section('externcss')
-    <link href="{{ URL::asset('assets/css/sweetalert.css') }}" rel="stylesheet" />
+    <link href="{{ secure_asset('assets/css/sweetalert.css') }}" rel="stylesheet" />
 @endsection
 
 
 @section('myjs')
 
 <script src="http://maps.google.com/maps/api/js?key=AIzaSyB8VUmzsg1xJKrNDqFlnbBiYAwWEWmkfe8"></script>
-<script src="{{ URL::asset('assets/js/gmaps.js') }}"></script>
+<script src="{{ secure_asset('assets/js/gmaps.js') }}"></script>
 
-<script src="{{ URL::asset('assets/js/sweetalert.min.js') }}"></script>
+<script src="{{ secure_asset('assets/js/sweetalert.min.js') }}"></script>
 
 <script type="text/javascript">
 
