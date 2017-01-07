@@ -127,7 +127,7 @@
 
 @section('myjs')
 
-<script src="http://maps.google.com/maps/api/js?key=AIzaSyB8VUmzsg1xJKrNDqFlnbBiYAwWEWmkfe8"></script>
+<script src="https://maps.google.com/maps/api/js?key=AIzaSyB8VUmzsg1xJKrNDqFlnbBiYAwWEWmkfe8"></script>
 <script src="{{ secure_asset('assets/js/gmaps.js') }}"></script>
 
 <script src="{{ secure_asset('assets/js/sweetalert.min.js') }}"></script>
