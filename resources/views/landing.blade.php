@@ -104,7 +104,7 @@
                             </div>
                         </div>
                         <div class="col-md-5 hidden-xs">
-                            <img src="{{ URL::asset('assets/img/prize.png') }}" />
+                            <img src="{{ secure_asset('assets/img/prize.png') }}" />
                         </div>
                     </div>
                 </div>
