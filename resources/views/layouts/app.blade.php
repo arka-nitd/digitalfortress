@@ -26,7 +26,7 @@
 <body>
 
     <div class="wrapper">
-        <div class="sidebar" data-color="red" data-image="{{ URL::asset('assets/img/sd2.jpg') }}">
+        <div class="sidebar" data-color="red" data-image="{{ secure_asset('assets/img/sd2.jpg') }}">
 
             <div class="logo">
                 <h4 class="simple-text">
@@ -109,7 +109,7 @@
                 </div>
             </nav>
 
-            <div class="content" style="background-image: url('{{ URL::asset('assets/img/hp.png')}}'); background-repeat:no-repeat; background-position: right center; ">
+            <div class="content" style="background-image: url('{{ secure_asset('assets/img/hp.png')}}'); background-repeat:no-repeat; background-position: right center; ">
                 <div class="container-fluid">
                     <div class="row">
                         @yield('content')

@@ -29,7 +29,7 @@
                     <span class="icon-bar bar2"></span>
                     <span class="icon-bar bar3"></span>
                     </button>
-                    <a href="http://www.abc.xyz">
+                    <a href="http://www.nitdgplug.org">
                         <div class="logo-container">
                             <div class="logo">
                                 <img src="{{ URL::asset('assets/img/new_logo.png') }}" alt="GLUG Logo">
