@@ -12,8 +12,8 @@
         <link href="{{ secure_asset('assets/css/landing-page.css') }}" rel="stylesheet"/>
 
         <!--     Fonts and icons     -->
-        <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
-        <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400,300' rel='stylesheet' type='text/css'>
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+        <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400,300' rel='stylesheet' type='text/css'>
 
         <link href="{{ secure_asset('assets/css/pe-icon-7-stroke.css') }}" rel="stylesheet" />
         <link href="{{ secure_asset('assets/css/material-dashboard.css') }}" rel="stylesheet" />
@@ -32,7 +32,7 @@
                     <a href="http://www.nitdgplug.org">
                         <div class="logo-container">
                             <div class="logo">
-                                <img src="{{ URL::asset('assets/img/new_logo.png') }}" alt="GLUG Logo">
+                                <img src="{{ secure_asset('assets/img/new_logo.png') }}" alt="GLUG Logo">
                             </div>
                             <div class="brand">
                                 
@@ -69,7 +69,7 @@
         <div class="wrapper">
             <div class="parallax filter-gradient gray" data-color="blue">
                 <div class="parallax-background">
-                    <img class="parallax-background-image" src="{{ URL::asset('assets/img/Hogwartscastle.jpg') }}">
+                    <img class="parallax-background-image" src="{{ secure_asset('assets/img/Hogwartscastle.jpg') }}">
                 </div>
                 <div class= "container">
                     <div class="row">
@@ -111,7 +111,7 @@
             </div>
             <div class="parallax filter-gradient orange" data-color="blue">
                 <div class="parallax-background">
-                    <img class="parallax-background-image" src="{{ URL::asset('assets/img/Hogwartscastle.jpg') }}">
+                    <img class="parallax-background-image" src="{{ secure_asset('assets/img/Hogwartscastle.jpg') }}">
                 </div>
                 <div class= "container">
                     <div class="row">
