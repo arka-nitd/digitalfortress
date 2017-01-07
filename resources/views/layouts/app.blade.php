@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width" />
 
     <!-- Bootstrap Core CSS -->
-    <link href="{{ URL::asset('assets/css/bootstrap.min.css') }} " rel="stylesheet" />
+    <link href="{{ URL::secure_asset('assets/css/bootstrap.min.css') }} " rel="stylesheet" />
 
     
     <!-- Material Dashboard CSS -->
