@@ -13,13 +13,12 @@ class CreateLeaderboardTable extends Migration
     public function up()
     {
         Schema::create('leaderboard', function (Blueprint $table) {
-            $table->bigInteger('id');
-            $table->string('email');
+            $table->increments('id');
             $table->string('username');
+            $table->string('email');
             $table->integer('round_id');
             $table->timestamps();
             $table->unique('email');
-            $table->primary('id');  
             $table->foreign('email')->references('email')->on('users');
         });
     }

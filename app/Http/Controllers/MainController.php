@@ -7,113 +7,82 @@ use Illuminate\Http\Request;
 use App\Http\Requests;
 use App\leaderboard;
 use App\solved;
-use App\quiz;
-use App\roundans;
+use App\question;
+use App\round;
 
 class MainController extends Controller
 {
-	protected $maxround = 9;
-    public function round($id)
-    {
-        $utoken = session('user_id');
-        $maxround = leaderboard::where('id',$utoken)->select('round_id')->first();
-        $maxround = $maxround['round_id'];
-        $cc = leaderboard::where('round_id','>',$id)->count();
-        $quesquery = solved::where(['email'=>session('email'),'round_id'=>$id])->select('question_no')->get();
-        $totalques = quiz::where('round',$id)->select('id','position')->get();
-        $rquery    = roundans::where('id',$id)->select('question','round_name')->first();
-        $rq = $rquery['question'];
-        $rname = $rquery['round_name'];
-        $qdone = array();
-        $i=0;
-        foreach($quesquery as $ques) {
-            $qdone[$i]=$ques['question_no'];
-            $i++;
-        }
 
-        $i=0;$i2=0;
-        $parray = array();
-        $tques = array();
-        $totpos = array();
-        $location = array();
-        foreach($totalques as $t)
+    public function roundoverview(Request $requests)
+    {
+        if(!$requests->session()->has('email'))
         {
-            $tques[$i2]=$t['id'];
-            $totpos[$i2]=$t['position'];
-            if(in_array($tques[$i2],$qdone)){
-                $parray[$i]=explode(",",$t['position']);
-                $location[$i]=$t['position'];
-                $i++;
+           return redirect('/dashboard');
+        }
+        $currentRound = leaderboard::where('email',session('email'))->first()['round_id'];
+        $maxround = round::all()->max('round_id');
+        if($currentRound>$maxround)
+            return view('quiz/winner');
+        $question = question::where('round_id',$currentRound)->select(['question_no','title','question','position'])->get()->toArray();
+        $solved = solved::where(['email'=>session('email'),'round_id'=>$currentRound])->get()->toArray();
+        $roundDetails = round::where('round_id',$currentRound)->select(['round_name','question'])->first();
+
+        $locations = [];
+        $solved = array_column($solved, 'question_no');
+
+        foreach ($question as $key=>$value) {
+            if(in_array($value['question_no'], $solved))
+            {
+                $locations[]=explode(",",$value['position']);
+                $question[$key]['solved'] = 1;
             }
-            $i2++;
+            else
+            {
+                $question[$key]['solved'] = 0;
+            }
+            unset($question[$key]['position']);
         }
-        if($id>$maxround || $id<1)
-            return redirect(url('/round/'.$maxround));
-        else if($id>$this->maxround){
-            return view('quiz/winner')->with('id',$id);
-        }
-        else
-        {
-            return view('quiz/round')->with(['id'=>$id,'qdone'=>$qdone,'pos'=>$location,'totalques'=>$tques,'totalpos'=>$totpos,'rq'=>$rq,'rname'=>$rname,'c'=>$cc,'locations'=>$parray]);
-        }
-    }
-    public function showquestion($rid, $qid)
-    {
-        $utoken = session('user_id');
-        $current = leaderboard::where('id',$utoken)->select('round_id')->first();
-        $current=$current['round_id'];
-        $invalid=0;
-        $qrid = quiz::where('id',$qid)->select('round')->first();
-        $qrid=$qrid['round'];
-        if($qrid>$current)
-            $invalid=1;
-        if($rid>$current || $invalid==1)
-            return redirect(url('/round/'.$current));
-        $quiz = quiz::where('id', $qid)->first();
-        return view('quiz/ques')->with(['qid'=>$qid,'ques'=>$quiz['question'],'error'=>'']);    	
-    }
-	public function quesvalidate(Request $request, $qid)
-    {
-        $quiz= quiz::where('id', $qid)->first();
-        $ans=$request->input('ansq');
-        $utoken = session('user_id');
-        if(strcasecmp($ans,$quiz['answer'])==0){
-            $rid = $quiz['round'];
-            solved::firstOrCreate(['email'=>session('email'),'question_no'=>$qid, 'round_id'=>$rid]);
-            return redirect(url('/round/'.$rid));
-        }
-        else
-             return view('quiz/ques')->with(['qid'=>$qid,'ques'=>$quiz['question'],'error'=>'Wrong Answer']);;
-    }
-    public function nextround(Request $request, $id)
-    {
-        if($id>$this->maxround){
-            return 'Congrats !! you have completed the quiz';
-        }
-        $rans = roundans::where('id',$id)->first();
-        $ans=$request->input('ansr');
-        $utoken = session('user_id');
-        if(strcasecmp($rans['answer'],$ans)==0){
-            $id++;
-            leaderboard::where('id',$utoken)->update(['round_id'=>$id]);
-            return redirect(url('/round/'.$id));
-        }
-        else{
-            return redirect(url('/round/'.$id));
-        }
-
-    }
-    public function lboard()
-    {
-        $stats = leaderboard::all(['email','username','round_id','updated_at']);
-        $statsdetails= array();
-        $i=0;
-        foreach($stats as $t)
-            $statsdetails[$i++]=$t['attributes'];
-        return view('quiz/leaderboard')->with('stand',$statsdetails);
+        $details = array(
+                        'tab'       =>  2,
+                        'dashname'  => 'Round '.$currentRound,
+                        'locations' =>  $locations,
+                        'roundDetails'     =>  $roundDetails,
+                       // 'solved'    =>  $solved,
+                        'question'  =>  $question,
+                        'round'     =>  $currentRound
+                    );
+        return view('quiz/roundoverview')->with($details);
     }
 
-    public function rules(){
-        return view('quiz/rules');
+    public function verifyans(Request $requests)
+    {
+        $qno = $requests->input('qno');
+        $ques = question::where('question_no',$qno)->select(['answer','round_id'])->first();
+        $userans = $requests->input('ans');
+
+        if($ques['answer'] == $userans){
+            solved::firstOrCreate(['email'=>session('email'),'question_no'=>$qno, 'round_id'=>$ques['round_id']]);
+            return "true";
+        }
+        else
+            return "false";
     }
+
+    public function verifyroundans(Request $requests)
+    {
+        $rno = $requests->input('rno');
+        $maxround = round::all()->max('round_id');
+        $ans = round::where('round_id',$rno)->select('answer')->first()['answer'];
+        $userans = $requests->input('ans');
+        if($ans == $userans){
+            $rno++;
+            leaderboard::where('email',session('email'))->update(['round_id'=>$rno]);
+            if($rno>$maxround)
+                return "complete";
+            return "true";
+        }
+        else
+            return "false";
+    }
+    
 }

@@ -7,7 +7,7 @@
     "require": {
         "php": ">=5.5.9",
         "laravel/framework": "5.2.*",
-        "serverfireteam/panel": "^1.4",
+        "serverfireteam/panel": "^1.5",
         "laravel/socialite": "^2.0"
     },
     "require-dev": {

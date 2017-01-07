@@ -12,8 +12,9 @@ class CreateRoundAnswerTable extends Migration
      */
     public function up()
     {
-        Schema::create('roundans', function (Blueprint $table) {
+        Schema::create('round', function (Blueprint $table) {
             $table->increments('id');
+            $table->integer('round_id');
             $table->string('round_name');
             $table->string('question');
             $table->string('answer');
@@ -28,6 +29,6 @@ class CreateRoundAnswerTable extends Migration
      */
     public function down()
     {
-        Schema::drop('roundans');
+        Schema::drop('round');
     }
 }

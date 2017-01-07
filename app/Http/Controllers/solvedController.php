@@ -15,8 +15,8 @@ class solvedController extends CrudController{
 
 			$this->filter = \DataFilter::source(new \App\solved);
 			$this->filter->add('email', 'Email ID', 'text');
-			$this->filter->add('question_no', 'Question No', 'text');
-			$this->filter->add('round_id', 'Round ID', 'text');
+			$this->filter->add('question_no', 'Question No.', 'text');
+			$this->filter->add('round_id', 'Round No.', 'text');
 			$this->filter->submit('search');
 			$this->filter->reset('reset');
 			$this->filter->build();
@@ -26,9 +26,8 @@ class solvedController extends CrudController{
 			$this->grid->add('email', 'Email ID');
 			$this->grid->add('question_no', 'Question No');
 			$this->grid->add('round_id', 'Round ID');
-			$this->addStylesToGrid();
-
-   
+			
+			$this->addStylesToGrid();   
                  
         return $this->returnView();
     }
@@ -36,11 +35,16 @@ class solvedController extends CrudController{
     public function  edit($entity){
         
         parent::edit($entity);
+        
+        $this->edit = \DataEdit::source(new \App\solved);
 
-			
-			$helpMessage = trans('Sorry !! This page is not meant for editing');
-			$this->addHelperMessage($helpMessage);
-       
+		$helpMessage = trans('Details of Question Solved by the Users');
+		$this->addHelperMessage($helpMessage);
+	
+	    $this->edit->add('email', 'Email','text')->rule('required');
+		$this->edit->add('question_no', 'Question No.','text')->rule('required');
+		$this->edit->add('round_id', 'Round No.','text')->rule('required');
+		
         return $this->returnEditView();
     }    
 }

@@ -14,16 +14,16 @@ class usersController extends CrudController{
         parent::all($entity); 
 
 			$this->filter = \DataFilter::source(new \App\users);
-			$this->filter->add('email', 'Email ID', 'text');
-			$this->filter->add('username', 'User Name', 'text');
+			$this->filter->add('email', 'Email', 'text');
+			$this->filter->add('username', 'Name', 'text');
 			$this->filter->submit('search');
 			$this->filter->reset('reset');
 			$this->filter->build();
 
 			$this->grid = \DataGrid::source($this->filter);
 			$this->grid->add('id', 'ID',true);
-			$this->grid->add('email', 'Email ID');
 			$this->grid->add('username', 'Name');
+			$this->grid->add('email', 'Email');
 			$this->grid->add('created_at', 'Created At');	
 			$this->addStylesToGrid();	
 
@@ -37,11 +37,10 @@ class usersController extends CrudController{
 
 			$this->edit = \DataEdit::source(new \App\users);
 
-			$this->edit->label('Edit Users');
+			$helpMessage = trans('User details are not editable');
+			$this->addHelperMessage($helpMessage);
 
-			$this->edit->add('email', 'Email ID', 'text')->rule('required');
-			$this->edit->add('username', 'Name', 'text')->rule('required');
-       
+
         return $this->returnEditView();
     }    
     

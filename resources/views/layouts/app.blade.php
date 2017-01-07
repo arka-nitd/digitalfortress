@@ -3,97 +3,143 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
+    <meta name="csrf_token" content="{{csrf_token()}}">
     <title>Digital Fortress</title>
+    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+    <meta name="viewport" content="width=device-width" />
 
-    <!-- Fonts -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css" rel='stylesheet' type='text/css'>
-    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700" rel='stylesheet' type='text/css'>
+    <!-- Bootstrap Core CSS -->
+    <link href="{{ URL::asset('assets/css/bootstrap.min.css') }} " rel="stylesheet" />
 
     
-      <style type="text/css">
-        #map {
-          width: 550px;
-          height: 300px;
-        }
-      </style>
-    <!-- Styles -->
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
-    {{-- <link href="{{ elixir('css/app.css') }}" rel="stylesheet"> --}}
+    <!-- Material Dashboard CSS -->
+    <link href="{{ URL::asset('assets/css/material-dashboard.css') }}" rel="stylesheet" />
 
-    <!-- <link rel="stylesheet" href="{{ URL::asset('public/css/app.css') }}"> -->
-    <link href="{{ URL::asset('css/main.css') }}" rel="stylesheet" type="text/css" >   
+    
+    <!-- Fonts And Icons -->
+    <link href="{{ URL::asset('assets/css/font-awesome.min.css') }} " rel="stylesheet" />
+    <link href="{{ URL::asset('assets/css/matico.css') }} " rel='stylesheet' type='text/css'>
 
-    <!-- JavaScripts -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-    {{-- <script src="{{ elixir('js/app.js') }}"></script> --}}
-    <script src="http://maps.google.com/maps/api/js"></script>
-    <script src="{{ URL::asset('js/gmaps.js') }}"></script>
-
-    <style>
-        body {
-            font-family: 'Lato';
-        }
-
-        .fa-btn {
-            margin-right: 6px;
-        }
-    </style>
+    @yield('externcss')
 
 </head>
-<body id="app-layout">
-    <nav class="navbar navbar-default" style="background-color: #337ab7 ;">
-        <div class="container">
-            <div class="navbar-header">
+<body>
 
-                <!-- Collapsed Hamburger -->
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#app-navbar-collapse" style="color:smokewhite;">
-                    <span class="sr-only">Toggle Navigation</span>
-                    
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
+    <div class="wrapper">
+        <div class="sidebar" data-color="red" data-image="{{ URL::asset('assets/img/sd2.jpg') }}">
 
-                <!-- Branding Image -->
-                <a class="navbar-brand" href="{{ url('/') }}" style="color:white;">
-                    <strong>DIGITAL FORTRESS</strong>
-                </a>
+            <div class="logo">
+                <h4 class="simple-text">
+                    <strong>Digital Fortress</strong>
+                </h4>
             </div>
 
-            <div class="collapse navbar-collapse" id="app-navbar-collapse">
-                <!-- Left Side Of Navbar -->
-                <ul class="nav navbar-nav">
-                
-                    <li><a href="{{ url('/rules') }}" style="color:white;"><strong>RULES</strong></a></li>
-                    <li><a href="{{ url('/leaderboard') }}" style="color:white;"><strong>LEADERBOARD</strong></a></li>
-                </ul>
+            <div class="sidebar-wrapper">
+                <ul class="nav">
 
-                <!-- Right Side Of Navbar -->
-                <ul class="nav navbar-nav navbar-right mynav">
-                    <!-- Authentication Links -->
-                    <?php if (!session()->has('name')){ ?>
-                        <li><a href="{{ url('/login/fb') }}" style="color:white;"><strong>LOGIN</strong></a></li>
-                    <?php }
-                    else { ?>
-                        <li>
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false" style="color:white;"><strong>
-                                {{session('name') }} </strong><span class="caret"></span>
+                    @if (session()->has('email'))
+                        <li class="{{ (isset($tab)&&$tab==1)?'active':''}}">
+                            <a href="dashboard">
+                                <i class="material-icons">dashboard</i>
+                                <p>Dashboard</p>
                             </a>
-
-                            <ul class="dropdown-menu" role="menu">
-                                <li><a href="{{ url('/logout') }}"><i class="fa fa-btn fa-sign-out" style="color:white;"></i><strong>LOGOUT</strong></a></li>
-                            </ul>
                         </li>
-                    <?php } ?>
+                        <li class="{{ (isset($tab)&&$tab==2)?'active':''}}">
+                            <a href="round_overview">
+                                <i class="material-icons">lock</i>
+                                <p>Round Overview</p>
+                            </a>
+                        </li>
+                    @else
+                        <li class="{{ (isset($tab)&&$tab==1)?'active':''}}">
+                            <a href="dashboard">
+                                <i class="material-icons">play_arrow</i>
+                                <p>Login</p>
+                            </a>
+                        </li>
+                    @endif
+                    
+                    <li class="{{ (isset($tab)&&$tab==3)?'active':''}}">
+                        <a href="/rules">
+                            <i class="material-icons">next_week</i>
+                            <p>Rules and Regulation</p>
+                        </a>
+                    </li>
+
+                    <li class="{{ (isset($tab)&&$tab==4)?'active':''}}">
+                        <a href="/leaderboard">
+                            <i class="material-icons">list</i>
+                            <p>Leaderboard</p>
+                        </a>
+                    </li>
+
                 </ul>
             </div>
         </div>
-    </nav>
 
-    @yield('content')
+        <div class="main-panel">
+            <nav class="navbar navbar-transparent navbar-absolute">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="#">{{ $dashname or '' }}</a>
+                    </div>
+                    <div class="collapse navbar-collapse">
+                        <ul class="nav navbar-nav navbar-right">
+                            @if (session()->has('name'))
+                                <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                       <i class="material-icons"  style="font-size: 28px;">person</i>
+                                   </a>
+                                
+                                    <ul class="dropdown-menu">
+                                        <li><a href="/myprofile">My Profile</a></li>
+                                        <li><a href="/logout">Logout</a></li>
+                                     </ul>
+                                </li>
+                            @endif
+                        </ul>
+                    </div>
 
+                </div>
+            </nav>
+
+            <div class="content" style="background-image: url('{{ URL::asset('assets/img/hp.png')}}'); background-repeat:no-repeat; background-position: right center; ">
+                <div class="container-fluid">
+                    <div class="row">
+                        @yield('content')
+                    </div>
+                </div>
+            </div>
+            <footer class="footer">
+                <div class="container-fluid">
+                    <p class="copyright pull-right">
+                        &copy; <script>document.write(new Date().getFullYear())</script> <a href="#">GNU Linux User's Group</a>
+                    </p>
+                </div>
+            </footer>
+        </div>
+    </div>
    
 </body>
+
+@yield('modal')
+   
+<!-- Core JS Files -->
+    <script src="{{ URL::asset('assets/js/jquery-3.1.0.min.js') }} " type="text/javascript"></script>
+    <script src="{{ URL::asset('assets/js/bootstrap.min.js') }}" type="text/javascript"></script>
+    <script src="{{ URL::asset('assets/js/material.min.js') }}" type="text/javascript"></script>
+
+
+   
+    <!-- Material Dashboard javascript methods -->
+    <script src="{{ URL::asset('assets/js/material-dashboard.js') }}"></script>
+    
+    @yield('myjs')
+
 </html>

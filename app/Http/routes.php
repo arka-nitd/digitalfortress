@@ -23,16 +23,31 @@
 */
 
 Route::group(['middleware' => ['web']], function () {
-    Route::get('/','HomeController@dashboard');
-    Route::get('login/fb', 'HomeController@login');
-	Route::get('login/fb/callback', 'HomeController@callback');
+    Route::get('/','HomeController@landing');
+    Route::get('dashboard','HomeController@dashboard');
+
+    Route::get('login/{id}', 'HomeController@sociallogin');
+	Route::get('login/{id}/callback', 'HomeController@socialcallback');
 	Route::get('logout', 'HomeController@logout');
-	Route::get('start','HomeController@start');
+	
+    Route::post('login', 'HomeController@login');
+    Route::post('register', 'HomeController@register');
+
+    Route::get('/rules', 'HomeController@rules');
+    Route::get('/leaderboard', 'HomeController@lboard');
+
+
+    Route::get('/round_overview', 'MainController@roundoverview');
+    Route::post('/verifyroundans', 'MainController@verifyroundans');
+    Route::post('/verifyans', 'MainController@verifyans');
+
+    Route::get('/myprofile', 'HomeController@myprofile');
+    Route::post('/updatepassword', 'HomeController@updatepassword');
+
+/*    Route::get('start','HomeController@start');
     Route::get('/round/{id}','MainController@round');
-    Route::get('/rules', 'MainController@rules');
     Route::get('/round/{rid}/{qid}', 'MainController@showquestion');
     Route::post('/check/{qid}','MainController@quesvalidate');
-    Route::post('/round/{id}','MainController@nextround');
-    Route::get('/leaderboard', 'MainController@lboard');
+    Route::post('/round/{id}','MainController@nextround');*/
 
 });
