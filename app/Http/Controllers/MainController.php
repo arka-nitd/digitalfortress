@@ -24,6 +24,7 @@ class MainController extends Controller
         if($currentRound>$maxround)
             return view('quiz/winner');
         $question = question::where('round_id',$currentRound)->select(['question_no','title','question','position'])->get()->toArray();
+        usort($question, function($a, $b){ return $a['question_no']>=$b['question_no']; });
         $solved = solved::where(['email'=>session('email'),'round_id'=>$currentRound])->get()->toArray();
         $roundDetails = round::where('round_id',$currentRound)->select(['round_name','question'])->first();
 
@@ -47,7 +48,6 @@ class MainController extends Controller
                         'dashname'  => 'Round '.$currentRound,
                         'locations' =>  $locations,
                         'roundDetails'     =>  $roundDetails,
-                       // 'solved'    =>  $solved,
                         'question'  =>  $question,
                         'round'     =>  $currentRound
                     );
