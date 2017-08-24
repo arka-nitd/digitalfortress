@@ -61,7 +61,7 @@ class HomeController extends Controller
 
             $key = array_search($email, array_column($lboard, 'email'));
             
-            $lboard = array_slice($lboard, ($key-4>0)?key-4:0, ($key+4<=count($lboard))?$key+4:count($lboard), true);
+            $lboard = array_slice($lboard, ($key-4>0)?$key-4:0, ($key+4<=count($lboard))?$key+4:count($lboard), true);
 
             $cc = leaderboard::where('round_id','>',$lboard[$key]['round_id'])->count();
 
