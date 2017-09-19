@@ -7,6 +7,7 @@ use Illuminate\Http\Request;
 use App\Http\Requests;
 use Socialite;
 use App\users;
+use App\hints;
 use App\leaderboard;
 use Illuminate\Validation\Validator;
 use Illuminate\Support\Facades\Hash;
@@ -45,6 +46,11 @@ class HomeController extends Controller
 
     public function rules(){
         return view('quiz/rules')->with(['tab'=>3,'dashname'=>'Rules and Regulations']);
+    }
+
+    public function hints(){
+        $hints = hints::all()->toArray();
+        return view('quiz/hints')->with(['tab'=>5,'dashname'=>'Hints', 'hints'=>$hints]);
     }
 
 

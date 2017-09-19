@@ -121,22 +121,21 @@
 @endsection
 
 @section('externcss')
-    <link href="{{ secure_asset('assets/css/sweetalert.css') }}" rel="stylesheet" />
+    <link href="{{ url('assets/css/sweetalert.css') }}" rel="stylesheet" />
 @endsection
 
 
 @section('myjs')
 
-<script src="https://maps.google.com/maps/api/js?key=AIzaSyB8VUmzsg1xJKrNDqFlnbBiYAwWEWmkfe8"></script>
-<script src="{{ secure_asset('assets/js/gmaps.js') }}"></script>
+<script src="https://maps.google.com/maps/api/js?key=AIzaSyAJNEP6QfEhc076Gpxf63VZEyInI2k7V38"></script>
+<script src="{{ url('assets/js/gmaps.js') }}"></script>
 
-<script src="{{ secure_asset('assets/js/sweetalert.min.js') }}"></script>
+<script src="{{ url('assets/js/sweetalert.min.js') }}"></script>
 
 <script type="text/javascript">
 
 function showGoogleMap(e)
  {
-
 
     locations = <?php echo json_encode($locations); ?>;
 
@@ -177,8 +176,6 @@ $(document).ready(function(){
     
     map = new GMaps({div: '#map',lat:23.5501761,lng:87.2875451});
     showGoogleMap(map);
-
-    
 
     $("#enlargemap").click(function(){
         $("#mymapmodal").modal({show:true,keyboard:true});

@@ -34,6 +34,7 @@ Route::group(['middleware' => ['web']], function () {
     Route::post('/register', 'HomeController@register');
 
     Route::get('/rules', 'HomeController@rules');
+    Route::get('/hints', 'HomeController@hints');
     Route::get('/leaderboard', 'HomeController@lboard');
 
 

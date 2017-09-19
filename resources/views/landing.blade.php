@@ -9,14 +9,14 @@
         <meta name="viewport" content="width=device-width" />
 
         <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
-        <link href="{{ secure_asset('assets/css/landing-page.css') }}" rel="stylesheet"/>
+        <link href="{{ url('assets/css/landing-page.css') }}" rel="stylesheet"/>
 
         <!--     Fonts and icons     -->
         <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
         <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400,300' rel='stylesheet' type='text/css'>
 
-        <link href="{{ secure_asset('assets/css/pe-icon-7-stroke.css') }}" rel="stylesheet" />
-        <link href="{{ secure_asset('assets/css/material-dashboard.css') }}" rel="stylesheet" />
+        <link href="{{ url('assets/css/pe-icon-7-stroke.css') }}" rel="stylesheet" />
+        <link href="{{ url('assets/css/material-dashboard.css') }}" rel="stylesheet" />
     </head>
     <body class="landing-page landing-page1">
         <nav class="navbar navbar-transparent navbar-top" role="navigation">
@@ -32,7 +32,7 @@
                     <a href="http://www.nitdgplug.org">
                         <div class="logo-container">
                             <div class="logo">
-                                <img src="{{ secure_asset('assets/img/new_logo.png') }}" alt="GLUG Logo">
+                                <img src="{{ url('assets/img/new_logo.png') }}" alt="GLUG Logo">
                             </div>
                             <div class="brand">
                                 
@@ -69,7 +69,7 @@
         <div class="wrapper">
             <div class="parallax filter-gradient gray" data-color="blue">
                 <div class="parallax-background">
-                    <img class="parallax-background-image" src="{{ secure_asset('assets/img/Hogwartscastle.jpg') }}">
+                    <img class="parallax-background-image" src="{{ url('assets/img/Hogwartscastle.jpg') }}">
                 </div>
                 <div class= "container">
                     <div class="row">
@@ -104,14 +104,14 @@
                             </div>
                         </div>
                         <div class="col-md-5 hidden-xs">
-                            <img src="{{ secure_asset('assets/img/prize.png') }}" />
+                            <img src="{{ url('assets/img/prize.png') }}" />
                         </div>
                     </div>
                 </div>
             </div>
             <div class="parallax filter-gradient orange" data-color="blue">
                 <div class="parallax-background">
-                    <img class="parallax-background-image" src="{{ secure_asset('assets/img/Hogwartscastle.jpg') }}">
+                    <img class="parallax-background-image" src="{{ url('assets/img/Hogwartscastle.jpg') }}">
                 </div>
                 <div class= "container">
                     <div class="row">
@@ -162,8 +162,8 @@
         </div>
 
     </body>
-    <script src="{{ secure_asset('assets/js/jquery-1.10.2.js') }}" type="text/javascript"></script>
-    <script src="{{ secure_asset('assets/js/jquery-ui-1.10.4.custom.min.js') }}" type="text/javascript"></script>
-    <script src="{{ secure_asset('assets/js/bootstrap.js') }}" type="text/javascript"></script>
-    <script src="{{ secure_asset('assets/js/awesome-landing-page.js') }}" type="text/javascript"></script>
+    <script src="{{ url('assets/js/jquery-1.10.2.js') }}" type="text/javascript"></script>
+    <script src="{{ url('assets/js/jquery-ui-1.10.4.custom.min.js') }}" type="text/javascript"></script>
+    <script src="{{ url('assets/js/bootstrap.js') }}" type="text/javascript"></script>
+    <script src="{{ url('assets/js/awesome-landing-page.js') }}" type="text/javascript"></script>
 </html>

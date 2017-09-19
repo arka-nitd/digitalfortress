@@ -9,24 +9,24 @@
     <meta name="viewport" content="width=device-width" />
 
     <!-- Bootstrap Core CSS -->
-    <link href="{{ secure_asset('assets/css/bootstrap.min.css') }} " rel="stylesheet" />
+    <link href="{{ url('assets/css/bootstrap.min.css') }} " rel="stylesheet" />
 
     
     <!-- Material Dashboard CSS -->
-    <link href="{{ secure_asset('assets/css/material-dashboard.css') }}" rel="stylesheet" />
+    <link href="{{ url('assets/css/material-dashboard.css') }}" rel="stylesheet" />
 
     
     <!-- Fonts And Icons -->
-    <link href="{{ secure_asset('assets/css/font-awesome.min.css') }} " rel="stylesheet" />
-    <link href="{{ secure_asset('assets/css/matico.css') }} " rel='stylesheet' type='text/css'>
-
+    <link href="{{ url('assets/css/font-awesome.min.css') }} " rel="stylesheet" />
+    <link href="{{ url('assets/css/matico.css') }} " rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/github-fork-ribbon-css/0.2.0/gh-fork-ribbon.min.css" />
     @yield('externcss')
 
 </head>
 <body style="overflow: hidden;">
 
     <div class="wrapper">
-        <div class="sidebar" data-color="red" data-image="{{ secure_asset('assets/img/sd2.jpg') }}">
+        <div class="sidebar" data-color="red" data-image="{{ url('assets/img/sd2.jpg') }}">
 
             <div class="logo">
                 <h4 class="simple-text">
@@ -73,6 +73,13 @@
                         </a>
                     </li>
 
+                    <li class="{{ (isset($tab)&&$tab==5)?'active':''}}">
+                        <a href="/hints">
+                            <i class="material-icons">list</i>
+                            <p>Hints</p>
+                        </a>
+                    </li>
+
                 </ul>
             </div>
         </div>
@@ -92,9 +99,9 @@
                     <div class="collapse navbar-collapse">
                         <ul class="nav navbar-nav navbar-right">
                             @if (session()->has('name'))
-                                <li class="dropdown">
-                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                                       <i class="material-icons"  style="font-size: 28px;">person</i>
+                                <li class="dropdown" style="">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" style="padding: 0px;">
+                                       <i class="material-icons"  style="font-size: 20px;">person</i>
                                    </a>
                                 
                                     <ul class="dropdown-menu">
@@ -109,36 +116,29 @@
                 </div>
             </nav>
 
-            <div class="content" style="background-image: url('{{ secure_asset('assets/img/hp.png')}}'); background-repeat:no-repeat; background-position: right center; ">
+            <div class="content" style="background-image: url('{{ url('assets/img/hp.png')}}'); background-repeat:no-repeat; background-position: right center; ">
                 <div class="container-fluid">
                     <div class="row">
                         @yield('content')
                     </div>
                 </div>
             </div>
-            <footer class="footer">
-                <div class="container-fluid">
-                    <p class="copyright pull-right">
-                        &copy; <script>document.write(new Date().getFullYear())</script> <a href="#">GNU Linux User's Group</a>
-                    </p>
-                </div>
-            </footer>
+             <a href="https://github.com/arka-nitd/digitalfortress"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/652c5b9acfaddf3a9c326fa6bde407b87f7be0f4/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f6f72616e67655f6666373630302e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_orange_ff7600.png"></a>
         </div>
     </div>
-   
 </body>
 
 @yield('modal')
    
 <!-- Core JS Files -->
-    <script src="{{ secure_asset('assets/js/jquery-3.1.0.min.js') }} " type="text/javascript"></script>
-    <script src="{{ secure_asset('assets/js/bootstrap.min.js') }}" type="text/javascript"></script>
-    <script src="{{ secure_asset('assets/js/material.min.js') }}" type="text/javascript"></script>
+    <script src="{{ url('assets/js/jquery-3.1.0.min.js') }} " type="text/javascript"></script>
+    <script src="{{ url('assets/js/bootstrap.min.js') }}" type="text/javascript"></script>
+    <script src="{{ url('assets/js/material.min.js') }}" type="text/javascript"></script>
 
 
    
     <!-- Material Dashboard javascript methods -->
-    <script src="{{ secure_asset('assets/js/material-dashboard.js') }}"></script>
+    <script src="{{ url('assets/js/material-dashboard.js') }}"></script>
     
     @yield('myjs')
 

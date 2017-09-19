@@ -57,7 +57,7 @@
 
 @section('myjs')
 
-<script src="{{ secure_asset('assets/js/pagination.js') }}"></script>
+<script src="{{ url('assets/js/pagination.js') }}"></script>
 
 <script>
 

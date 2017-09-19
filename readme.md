@@ -9,18 +9,22 @@
 
 ## Live Website
 
-To view Digital Fortress in action please visit the following website [Digital Fortress](http://dfmkti.herokuapp.com/)
+To view Digital Fortress in action please visit the following website [Digital Fortress](http://dfbeta.herokuapp.com/)
 
 ----------
 
 ## Installation and Requirements
 - Create a database and set the database configuration in .env file
 - Create your facebook app and add the following details in .env file
+
 ```
+DB_DATABASE=digitalfortress
+DB_USERNAME=<username>
+DB_PASSWORD=<password>
 FB_ID='facebook_app_id';
 FB_SECRET='facebook_app_secret'
 FB_REDIRECT= 'siteurl/login/fb/callback'
-where siteurl = http://localhost:8000 for local development
+where siteurl = http://localhost:8000 for local development assuming default port 8000
 ```
 
 - Then follow the below steps to get digital fortress up and running
@@ -32,34 +36,34 @@ where siteurl = http://localhost:8000 for local development
 5. `php artisan panel:install`
 
 ## Accessing the Admin Panel and setting up the game
-- Either use the sample db_dump.sql file to populate your database with the questions or add questions and monitor the app from the admin panel.
 - To access the admin panel follow the steps:
-- Goto [Digital Fortress ](http://dfmkti.herokuapp.com/panel "Admin Panel")
-- Use the following credentials :
+- Goto http://localhost:8000/panel/login and login with credentials 
 ```
-Email Id : arka.nitdgp14@gmail.com
-Password : helloworld
+Email Id : admin@change.me
+Password : 12345
 ```
 - Edit your profile and change password accordingly
 - Goto the links table and add the following models in it 
 
 Display  			| Model
 ------------		|---------
-Quiz Details 		| quiz
-Round Details    	| roundans
+Question 		| question
+Round    	| round
 Solved Questions	| solved
 Leaderboard 		| leaderboard
 Users		   		| users
+Hints		   		| hints
 
 - Now you can add utilise all the admin features of the game.
 
 ## Screenshots
 
-![Round 2](https://lh3.googleusercontent.com/UB5zRLV4lb6s10--suoq1gJM0yZVwNtL3gWzMI7onR1Gv5wA0jaiWGtQaXPS8IyE3f4=s600 "Screenshot from 2016-03-06 20-33-54.png")
+![Login](https://github.com/arka-nitd/digitalfortress/raw/master/public/assets/screens/1.png)
+![Round 1](https://github.com/arka-nitd/digitalfortress/raw/master/public/assets/screens/2.png)
+![Question](https://github.com/arka-nitd/digitalfortress/raw/master/public/assets/screens/3.png)
+![Answer Response](https://github.com/arka-nitd/digitalfortress/raw/master/public/assets/screens/4.png)
 
-![Main Page](https://lh3.googleusercontent.com/DlQENsh8_NaLAdYsyQMACVyKYOjrg2ky8ajf9LoxjHtfU-cbghQ-zGanA_jLtJGGE04=s600 "Screenshot from 2016-03-06 20-33-41.png")
-
-![Admin Dashboard](https://lh3.googleusercontent.com/rxN-whq244tHTxcfVlm3CfxUBfA7LDp5PyOI8H3PSnzsbuwWeYn62gRL_1E0rHKM62w=s600 "Screenshot from 2016-03-06 20-33-13.png")
+![Admin Dashboard](https://lh3.googleusercontent.com/rxN-whq244tHTxcfVlm3CfxUBfA7LDp5PyOI8H3PSnzsbuwWeYn62gRL_1E0rHKM62w=s600 "")
 
 ## Credits
 

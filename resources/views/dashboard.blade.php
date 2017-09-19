@@ -49,7 +49,7 @@
 		</div>
 	</div>
 
-	<div class="col-md-6 col-md-offset-1">
+	<div class="col-md-6">
 		<div class="card">
 	        <div class="card-header" data-background-color="red">
 	            <h4 class="title text-center">Live Leaderboard Position</h4>
@@ -86,19 +86,19 @@
 
 @section('externcss')
 	@if (isset($newusertext))
-		<link href="{{ secure_asset('assets/css/sweetalert.css') }}" rel="stylesheet" />
+		<link href="{{ url('assets/css/sweetalert.css') }}" rel="stylesheet" />
 	@endif
 @endsection
 
 @section('myjs')
 	@if (isset($newusertext)) 
 		@if ($newusertext!="error")
-		<script src="{{ secure_asset('assets/js/sweetalert.min.js') }}"></script>
+		<script src="{{ url('assets/js/sweetalert.min.js') }}"></script>
 		<script type="text/javascript">
 			swal({ title:'Thanks for registering !!',text:'{{ $newusertext }}', type:'info'}, function() { document.location.href = '/dashboard' });
 		</script>
 		@else
-		<script src="{{ secure_asset('assets/js/sweetalert.min.js') }}"></script>
+		<script src="{{ url('assets/js/sweetalert.min.js') }}"></script>
 		<script type="text/javascript">
 			swal({ title:'Email Taken !!',text:'Sorry !! The email id already exists. Try with a different one', type:'error'}, function() { document.location.href = '/dashboard' });
 		</script>
