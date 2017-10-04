@@ -93,6 +93,11 @@ class HomeController extends Controller
         $profile = users::where('email',$email)->first();
         if(!empty($profile))
         {
+            /*
+            Add your code here. The code must sent a verification code to users mail using smtp. store the user's record in
+            a separate table. whenever he/she logs in redirect to the enter otp page. after it is verified delete the record from
+            that table and push it in the final verified users table
+            */ 
             session()->put(['name'=>$profile['username'],'email'=>$profile['email']]);
         }
         return redirect('dashboard');
