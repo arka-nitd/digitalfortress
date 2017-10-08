@@ -45,4 +45,8 @@ Route::group(['middleware' => ['web']], function () {
     Route::get('/myprofile', 'HomeController@myprofile');
     Route::post('/updatepassword', 'HomeController@updatepassword');
 
+    Route::get('/account/activate/{email}/{code}', 'HomeController@activateAccount');
+    Route::post('/resend-activation', 'HomeController@resendActivation');
+    Route::get('/resend-activation', 'HomeController@getResendActivation');
+
 });

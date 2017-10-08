@@ -127,38 +127,7 @@
                 </div>
             </div>
             
-            <footer class="footer">
-                <div class="container">
-                    <nav class="pull-left">
-                        <ul>
-                            <li>
-                                <a href="#">
-                                Home
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                Blog
-                                </a>
-                            </li>
-                        </ul>
-                    </nav>
-                    <div class="social-area pull-right">
-                        <a class="btn btn-social btn-facebook btn-simple">
-                        <i class="fa fa-facebook-square"></i>
-                        </a>
-                        <a class="btn btn-social btn-twitter btn-simple">
-                        <i class="fa fa-twitter"></i>
-                        </a>
-                        <a class="btn btn-social btn-pinterest btn-simple">
-                        <i class="fa fa-pinterest"></i>
-                        </a>
-                    </div>
-                    <div class="copyright">
-                        &copy; 2017 <a href="http://abc.xyz">GNU Linux Users' Group</a>
-                    </div>
-                </div>
-            </footer>
+            
         </div>
 
     </body>
