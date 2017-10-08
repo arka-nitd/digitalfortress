@@ -2,8 +2,148 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e53d9894-1880-47f4-a187-de6f904983fb" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/views/activation-failed.blade.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/views/activation.blade.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/views/resend-activation.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/fonts/FontAwesome.otf" afterPath="$PROJECT_DIR$/public/assets/fonts/FontAwesome.otf" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/fonts/font2.ttf" afterPath="$PROJECT_DIR$/public/assets/fonts/font2.ttf" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/fonts/fontawesome-webfont.eot" afterPath="$PROJECT_DIR$/public/assets/fonts/fontawesome-webfont.eot" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/fonts/fontawesome-webfont.ttf" afterPath="$PROJECT_DIR$/public/assets/fonts/fontawesome-webfont.ttf" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/fonts/fontawesome-webfont.woff" afterPath="$PROJECT_DIR$/public/assets/fonts/fontawesome-webfont.woff" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/fonts/fontawesome-webfont.woff2" afterPath="$PROJECT_DIR$/public/assets/fonts/fontawesome-webfont.woff2" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/fonts/glyphicons-halflings-regular.eot" afterPath="$PROJECT_DIR$/public/assets/fonts/glyphicons-halflings-regular.eot" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/fonts/glyphicons-halflings-regular.ttf" afterPath="$PROJECT_DIR$/public/assets/fonts/glyphicons-halflings-regular.ttf" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/fonts/glyphicons-halflings-regular.woff" afterPath="$PROJECT_DIR$/public/assets/fonts/glyphicons-halflings-regular.woff" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/img/Hogwartscastle.jpg" afterPath="$PROJECT_DIR$/public/assets/img/Hogwartscastle.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/img/hp.png" afterPath="$PROJECT_DIR$/public/assets/img/hp.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/img/new_logo.png" afterPath="$PROJECT_DIR$/public/assets/img/new_logo.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/img/prize.png" afterPath="$PROJECT_DIR$/public/assets/img/prize.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/img/sd2.jpg" afterPath="$PROJECT_DIR$/public/assets/img/sd2.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/screens/1.png" afterPath="$PROJECT_DIR$/public/assets/screens/1.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/screens/2.png" afterPath="$PROJECT_DIR$/public/assets/screens/2.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/screens/3.png" afterPath="$PROJECT_DIR$/public/assets/screens/3.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/screens/4.png" afterPath="$PROJECT_DIR$/public/assets/screens/4.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/packages/serverfireteam/panel/css/fonts/Gandom-Bold.eot" afterPath="$PROJECT_DIR$/public/packages/serverfireteam/panel/css/fonts/Gandom-Bold.eot" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/packages/serverfireteam/panel/css/fonts/Gandom-Bold.ttf" afterPath="$PROJECT_DIR$/public/packages/serverfireteam/panel/css/fonts/Gandom-Bold.ttf" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/packages/serverfireteam/panel/css/fonts/Gandom-Bold.woff" afterPath="$PROJECT_DIR$/public/packages/serverfireteam/panel/css/fonts/Gandom-Bold.woff" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/packages/serverfireteam/panel/css/fonts/Gandom.eot" afterPath="$PROJECT_DIR$/public/packages/serverfireteam/panel/css/fonts/Gandom.eot" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/packages/serverfireteam/panel/css/fonts/Gandom.ttf" afterPath="$PROJECT_DIR$/public/packages/serverfireteam/panel/css/fonts/Gandom.ttf" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/packages/serverfireteam/panel/css/fonts/Gandom.woff" afterPath="$PROJECT_DIR$/public/packages/serverfireteam/panel/css/fonts/Gandom.woff" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/packages/serverfireteam/panel/css/fonts/Gandom.woff2" afterPath="$PROJECT_DIR$/public/packages/serverfireteam/panel/css/fonts/Gandom.woff2" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/packages/serverfireteam/panel/css/fonts/Vazir-Bold.eot" afterPath="$PROJECT_DIR$/public/packages/serverfireteam/panel/css/fonts/Vazir-Bold.eot" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/packages/serverfireteam/panel/css/fonts/Vazir-Bold.ttf" afterPath="$PROJECT_DIR$/public/packages/serverfireteam/panel/css/fonts/Vazir-Bold.ttf" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/packages/serverfireteam/panel/css/fonts/Vazir-Bold.woff" afterPath="$PROJECT_DIR$/public/packages/serverfireteam/panel/css/fonts/Vazir-Bold.woff" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/packages/serverfireteam/panel/css/fonts/Vazir.eot" afterPath="$PROJECT_DIR$/public/packages/serverfireteam/panel/css/fonts/Vazir.eot" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/packages/serverfireteam/panel/css/fonts/Vazir.ttf" afterPath="$PROJECT_DIR$/public/packages/serverfireteam/panel/css/fonts/Vazir.ttf" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/packages/serverfireteam/panel/css/fonts/Vazir.woff" afterPath="$PROJECT_DIR$/public/packages/serverfireteam/panel/css/fonts/Vazir.woff" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/packages/serverfireteam/panel/css/fonts/Vazir.woff2" afterPath="$PROJECT_DIR$/public/packages/serverfireteam/panel/css/fonts/Vazir.woff2" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/packages/zofe/rapyd/assets/lib/bootstrap/dist/fonts/glyphicons-halflings-regular.eot" afterPath="$PROJECT_DIR$/public/packages/zofe/rapyd/assets/lib/bootstrap/dist/fonts/glyphicons-halflings-regular.eot" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/packages/zofe/rapyd/assets/lib/bootstrap/dist/fonts/glyphicons-halflings-regular.ttf" afterPath="$PROJECT_DIR$/public/packages/zofe/rapyd/assets/lib/bootstrap/dist/fonts/glyphicons-halflings-regular.ttf" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/packages/zofe/rapyd/assets/lib/bootstrap/dist/fonts/glyphicons-halflings-regular.woff" afterPath="$PROJECT_DIR$/public/packages/zofe/rapyd/assets/lib/bootstrap/dist/fonts/glyphicons-halflings-regular.woff" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.env.example" afterPath="$PROJECT_DIR$/.env.example" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/MainController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/MainController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/rapyd.php" afterPath="$PROJECT_DIR$/app/Http/rapyd.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/routes.php" afterPath="$PROJECT_DIR$/app/Http/routes.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/hints.php" afterPath="$PROJECT_DIR$/app/hints.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/users.php" afterPath="$PROJECT_DIR$/app/users.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/mail.php" afterPath="$PROJECT_DIR$/config/mail.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" afterPath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/migrations/2017_09_19_181530_hints.php" afterPath="$PROJECT_DIR$/database/migrations/2017_09_19_181530_hints.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/css/bootstrap.css" afterPath="$PROJECT_DIR$/public/assets/css/bootstrap.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/css/bootstrap.min.css" afterPath="$PROJECT_DIR$/public/assets/css/bootstrap.min.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/css/font-awesome.min.css" afterPath="$PROJECT_DIR$/public/assets/css/font-awesome.min.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/css/landing-page.css" afterPath="$PROJECT_DIR$/public/assets/css/landing-page.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/css/material-dashboard.css" afterPath="$PROJECT_DIR$/public/assets/css/material-dashboard.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/css/matico.css" afterPath="$PROJECT_DIR$/public/assets/css/matico.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/css/simplePagination.css" afterPath="$PROJECT_DIR$/public/assets/css/simplePagination.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/css/sweetalert.css" afterPath="$PROJECT_DIR$/public/assets/css/sweetalert.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/fonts/fontawesome-webfont.svg" afterPath="$PROJECT_DIR$/public/assets/fonts/fontawesome-webfont.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/fonts/glyphicons-halflings-regular.svg" afterPath="$PROJECT_DIR$/public/assets/fonts/glyphicons-halflings-regular.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/js/awesome-landing-page.js" afterPath="$PROJECT_DIR$/public/assets/js/awesome-landing-page.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/js/bootstrap.js" afterPath="$PROJECT_DIR$/public/assets/js/bootstrap.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/js/bootstrap.min.js" afterPath="$PROJECT_DIR$/public/assets/js/bootstrap.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/js/jquery-1.10.2.js" afterPath="$PROJECT_DIR$/public/assets/js/jquery-1.10.2.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/js/jquery-3.1.0.min.js" afterPath="$PROJECT_DIR$/public/assets/js/jquery-3.1.0.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/js/jquery-ui-1.10.4.custom.min.js" afterPath="$PROJECT_DIR$/public/assets/js/jquery-ui-1.10.4.custom.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/js/material-dashboard.js" afterPath="$PROJECT_DIR$/public/assets/js/material-dashboard.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/js/material.min.js" afterPath="$PROJECT_DIR$/public/assets/js/material.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/js/pagination.js" afterPath="$PROJECT_DIR$/public/assets/js/pagination.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/js/sweetalert.min.js" afterPath="$PROJECT_DIR$/public/assets/js/sweetalert.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/packages/serverfireteam/panel/css/fa-fonts.css" afterPath="$PROJECT_DIR$/public/packages/serverfireteam/panel/css/fa-fonts.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/packages/serverfireteam/panel/css/rtl.css" afterPath="$PROJECT_DIR$/public/packages/serverfireteam/panel/css/rtl.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/packages/zofe/rapyd/assets/datatree/css/datatree.css" afterPath="$PROJECT_DIR$/public/packages/zofe/rapyd/assets/datatree/css/datatree.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/packages/zofe/rapyd/assets/datatree/js/datatree.js" afterPath="$PROJECT_DIR$/public/packages/zofe/rapyd/assets/datatree/js/datatree.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/packages/zofe/rapyd/assets/datatree/js/nestable/README.md" afterPath="$PROJECT_DIR$/public/packages/zofe/rapyd/assets/datatree/js/nestable/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/packages/zofe/rapyd/assets/datatree/js/nestable/index.html" afterPath="$PROJECT_DIR$/public/packages/zofe/rapyd/assets/datatree/js/nestable/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/packages/zofe/rapyd/assets/datatree/js/nestable/jquery.nestable.js" afterPath="$PROJECT_DIR$/public/packages/zofe/rapyd/assets/datatree/js/nestable/jquery.nestable.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/packages/zofe/rapyd/assets/lib/bootstrap/dist/css/bootstrap-theme.css" afterPath="$PROJECT_DIR$/public/packages/zofe/rapyd/assets/lib/bootstrap/dist/css/bootstrap-theme.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/packages/zofe/rapyd/assets/lib/bootstrap/dist/css/bootstrap-theme.css.map" afterPath="$PROJECT_DIR$/public/packages/zofe/rapyd/assets/lib/bootstrap/dist/css/bootstrap-theme.css.map" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/packages/zofe/rapyd/assets/lib/bootstrap/dist/css/bootstrap-theme.min.css" afterPath="$PROJECT_DIR$/public/packages/zofe/rapyd/assets/lib/bootstrap/dist/css/bootstrap-theme.min.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/packages/zofe/rapyd/assets/lib/bootstrap/dist/css/bootstrap.css" afterPath="$PROJECT_DIR$/public/packages/zofe/rapyd/assets/lib/bootstrap/dist/css/bootstrap.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/packages/zofe/rapyd/assets/lib/bootstrap/dist/css/bootstrap.css.map" afterPath="$PROJECT_DIR$/public/packages/zofe/rapyd/assets/lib/bootstrap/dist/css/bootstrap.css.map" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/packages/zofe/rapyd/assets/lib/bootstrap/dist/css/bootstrap.min.css" afterPath="$PROJECT_DIR$/public/packages/zofe/rapyd/assets/lib/bootstrap/dist/css/bootstrap.min.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/packages/zofe/rapyd/assets/lib/bootstrap/dist/fonts/glyphicons-halflings-regular.svg" afterPath="$PROJECT_DIR$/public/packages/zofe/rapyd/assets/lib/bootstrap/dist/fonts/glyphicons-halflings-regular.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/packages/zofe/rapyd/assets/lib/bootstrap/dist/js/bootstrap.js" afterPath="$PROJECT_DIR$/public/packages/zofe/rapyd/assets/lib/bootstrap/dist/js/bootstrap.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/packages/zofe/rapyd/assets/lib/bootstrap/dist/js/bootstrap.min.js" afterPath="$PROJECT_DIR$/public/packages/zofe/rapyd/assets/lib/bootstrap/dist/js/bootstrap.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/packages/zofe/rapyd/assets/lib/jquery/dist/jquery.js" afterPath="$PROJECT_DIR$/public/packages/zofe/rapyd/assets/lib/jquery/dist/jquery.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/packages/zofe/rapyd/assets/lib/jquery/dist/jquery.min.js" afterPath="$PROJECT_DIR$/public/packages/zofe/rapyd/assets/lib/jquery/dist/jquery.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/packages/zofe/rapyd/assets/lib/jquery/dist/jquery.min.map" afterPath="$PROJECT_DIR$/public/packages/zofe/rapyd/assets/lib/jquery/dist/jquery.min.map" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/packages/zofe/rapyd/assets/lib/riotjs/compiler.min.js" afterPath="$PROJECT_DIR$/public/packages/zofe/rapyd/assets/lib/riotjs/compiler.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/packages/zofe/rapyd/assets/lib/riotjs/riot+compiler.min.js" afterPath="$PROJECT_DIR$/public/packages/zofe/rapyd/assets/lib/riotjs/riot+compiler.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/packages/zofe/rapyd/assets/lib/riotjs/riot.min.js" afterPath="$PROJECT_DIR$/public/packages/zofe/rapyd/assets/lib/riotjs/riot.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/packages/zofe/rapyd/assets/rapyd.css" afterPath="$PROJECT_DIR$/public/packages/zofe/rapyd/assets/rapyd.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/packages/zofe/rapyd/assets/tags/dataembed.html" afterPath="$PROJECT_DIR$/public/packages/zofe/rapyd/assets/tags/dataembed.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/packages/zofe/rapyd/assets/tinymce/langs/ar.js" afterPath="$PROJECT_DIR$/public/packages/zofe/rapyd/assets/tinymce/langs/ar.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/packages/zofe/rapyd/assets/tinymce/langs/de.js" afterPath="$PROJECT_DIR$/public/packages/zofe/rapyd/assets/tinymce/langs/de.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/packages/zofe/rapyd/assets/tinymce/langs/de_AT.js" afterPath="$PROJECT_DIR$/public/packages/zofe/rapyd/assets/tinymce/langs/de_AT.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/packages/zofe/rapyd/assets/tinymce/langs/en_CA.js" afterPath="$PROJECT_DIR$/public/packages/zofe/rapyd/assets/tinymce/langs/en_CA.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/packages/zofe/rapyd/assets/tinymce/langs/en_GB.js" afterPath="$PROJECT_DIR$/public/packages/zofe/rapyd/assets/tinymce/langs/en_GB.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/packages/zofe/rapyd/assets/tinymce/langs/es.js" afterPath="$PROJECT_DIR$/public/packages/zofe/rapyd/assets/tinymce/langs/es.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/packages/zofe/rapyd/assets/tinymce/langs/es_MX.js" afterPath="$PROJECT_DIR$/public/packages/zofe/rapyd/assets/tinymce/langs/es_MX.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/packages/zofe/rapyd/assets/tinymce/langs/fa.js" afterPath="$PROJECT_DIR$/public/packages/zofe/rapyd/assets/tinymce/langs/fa.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/packages/zofe/rapyd/assets/tinymce/langs/fa_IR.js" afterPath="$PROJECT_DIR$/public/packages/zofe/rapyd/assets/tinymce/langs/fa_IR.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/packages/zofe/rapyd/assets/tinymce/langs/hy.js" afterPath="$PROJECT_DIR$/public/packages/zofe/rapyd/assets/tinymce/langs/hy.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/packages/zofe/rapyd/assets/tinymce/langs/it.js" afterPath="$PROJECT_DIR$/public/packages/zofe/rapyd/assets/tinymce/langs/it.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/packages/zofe/rapyd/assets/tinymce/langs/pl.js" afterPath="$PROJECT_DIR$/public/packages/zofe/rapyd/assets/tinymce/langs/pl.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/packages/zofe/rapyd/assets/tinymce/langs/pt_BR.js" afterPath="$PROJECT_DIR$/public/packages/zofe/rapyd/assets/tinymce/langs/pt_BR.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/packages/zofe/rapyd/assets/tinymce/langs/pt_PT.js" afterPath="$PROJECT_DIR$/public/packages/zofe/rapyd/assets/tinymce/langs/pt_PT.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/packages/zofe/rapyd/assets/tinymce/langs/ro.js" afterPath="$PROJECT_DIR$/public/packages/zofe/rapyd/assets/tinymce/langs/ro.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/packages/zofe/rapyd/assets/tinymce/langs/ru.js" afterPath="$PROJECT_DIR$/public/packages/zofe/rapyd/assets/tinymce/langs/ru.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/packages/zofe/rapyd/assets/tinymce/langs/ru_RU.js" afterPath="$PROJECT_DIR$/public/packages/zofe/rapyd/assets/tinymce/langs/ru_RU.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/packages/zofe/rapyd/assets/tinymce/langs/zh_CN.js" afterPath="$PROJECT_DIR$/public/packages/zofe/rapyd/assets/tinymce/langs/zh_CN.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/packages/zofe/rapyd/assets/tinymce/langs/zh_TW.js" afterPath="$PROJECT_DIR$/public/packages/zofe/rapyd/assets/tinymce/langs/zh_TW.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/dashboard.blade.php" afterPath="$PROJECT_DIR$/resources/views/dashboard.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/landing.blade.php" afterPath="$PROJECT_DIR$/resources/views/landing.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/loginregister.blade.php" afterPath="$PROJECT_DIR$/resources/views/loginregister.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/quiz/hints.blade.php" afterPath="$PROJECT_DIR$/resources/views/quiz/hints.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/quiz/myprofile.blade.php" afterPath="$PROJECT_DIR$/resources/views/quiz/myprofile.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/quiz/roundoverview.blade.php" afterPath="$PROJECT_DIR$/resources/views/quiz/roundoverview.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/vendor/mail/html/button.blade.php" afterPath="$PROJECT_DIR$/resources/views/vendor/mail/html/button.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/vendor/mail/html/footer.blade.php" afterPath="$PROJECT_DIR$/resources/views/vendor/mail/html/footer.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/vendor/mail/html/header.blade.php" afterPath="$PROJECT_DIR$/resources/views/vendor/mail/html/header.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/vendor/mail/html/layout.blade.php" afterPath="$PROJECT_DIR$/resources/views/vendor/mail/html/layout.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/vendor/mail/html/message.blade.php" afterPath="$PROJECT_DIR$/resources/views/vendor/mail/html/message.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/vendor/mail/html/panel.blade.php" afterPath="$PROJECT_DIR$/resources/views/vendor/mail/html/panel.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/vendor/mail/html/promotion.blade.php" afterPath="$PROJECT_DIR$/resources/views/vendor/mail/html/promotion.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/vendor/mail/html/promotion/button.blade.php" afterPath="$PROJECT_DIR$/resources/views/vendor/mail/html/promotion/button.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/vendor/mail/html/subcopy.blade.php" afterPath="$PROJECT_DIR$/resources/views/vendor/mail/html/subcopy.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/vendor/mail/html/table.blade.php" afterPath="$PROJECT_DIR$/resources/views/vendor/mail/html/table.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/vendor/mail/html/themes/default.css" afterPath="$PROJECT_DIR$/resources/views/vendor/mail/html/themes/default.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/vendor/mail/markdown/button.blade.php" afterPath="$PROJECT_DIR$/resources/views/vendor/mail/markdown/button.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/vendor/mail/markdown/footer.blade.php" afterPath="$PROJECT_DIR$/resources/views/vendor/mail/markdown/footer.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/vendor/mail/markdown/header.blade.php" afterPath="$PROJECT_DIR$/resources/views/vendor/mail/markdown/header.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/vendor/mail/markdown/layout.blade.php" afterPath="$PROJECT_DIR$/resources/views/vendor/mail/markdown/layout.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/vendor/mail/markdown/message.blade.php" afterPath="$PROJECT_DIR$/resources/views/vendor/mail/markdown/message.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/vendor/mail/markdown/panel.blade.php" afterPath="$PROJECT_DIR$/resources/views/vendor/mail/markdown/panel.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/vendor/mail/markdown/promotion.blade.php" afterPath="$PROJECT_DIR$/resources/views/vendor/mail/markdown/promotion.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/vendor/mail/markdown/promotion/button.blade.php" afterPath="$PROJECT_DIR$/resources/views/vendor/mail/markdown/promotion/button.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/vendor/mail/markdown/subcopy.blade.php" afterPath="$PROJECT_DIR$/resources/views/vendor/mail/markdown/subcopy.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/vendor/mail/markdown/table.blade.php" afterPath="$PROJECT_DIR$/resources/views/vendor/mail/markdown/table.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/vendor/pagination/bootstrap-4.blade.php" afterPath="$PROJECT_DIR$/resources/views/vendor/pagination/bootstrap-4.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/vendor/pagination/default.blade.php" afterPath="$PROJECT_DIR$/resources/views/vendor/pagination/default.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/vendor/pagination/simple-bootstrap-4.blade.php" afterPath="$PROJECT_DIR$/resources/views/vendor/pagination/simple-bootstrap-4.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/vendor/pagination/simple-default.blade.php" afterPath="$PROJECT_DIR$/resources/views/vendor/pagination/simple-default.blade.php" />
     </list>
     <ignored path="digitalfortress.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -15,29 +155,51 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FavoritesManager">
     <favorites_list name="digitalfortress" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="MainController.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/MainController.php">
+      <file leaf-file-name=".env.example" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.env.example">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="324">
-              <caret line="66" column="26" selection-start-line="66" selection-start-column="26" selection-end-line="66" selection-end-column="26" />
-              <folding>
-                <element signature="e#40#68#0#PHP" expanded="true" />
-              </folding>
+            <state relative-caret-position="522">
+              <caret line="29" column="0" lean-forward="true" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="72">
+              <caret line="4" column="0" lean-forward="true" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".env" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.env">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="126">
+              <caret line="7" column="12" lean-forward="false" selection-start-line="7" selection-start-column="12" selection-end-line="7" selection-end-column="12" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>sender</find>
+      <find>s</find>
+    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -46,6 +208,20 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/app/Http/Controllers/MainController.php" />
+        <option value="$PROJECT_DIR$/config/mail.php" />
+        <option value="$PROJECT_DIR$/resources/views/emails/account-activation.blade.php" />
+        <option value="$PROJECT_DIR$/.env" />
+        <option value="$PROJECT_DIR$/app/Mail/AccountActivation.php" />
+        <option value="$PROJECT_DIR$/app/users.php" />
+        <option value="$PROJECT_DIR$/app/Http/routes.php" />
+        <option value="$PROJECT_DIR$/resources/views/activation-failed.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/activation.blade.php" />
+        <option value="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" />
+        <option value="$PROJECT_DIR$/resources/views/loginregister.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/resend-activation.blade.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" />
+        <option value="$PROJECT_DIR$/resources/views/activation-success.blade.php" />
+        <option value="$PROJECT_DIR$/.env.example" />
       </list>
     </option>
   </component>
@@ -67,19 +243,10 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="y" value="24" />
-    <option name="width" value="1366" />
-    <option name="height" value="679" />
-  </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
-    <OptionsSetting value="true" id="Add" />
-    <OptionsSetting value="true" id="Remove" />
-    <OptionsSetting value="true" id="Checkout" />
-    <OptionsSetting value="true" id="Update" />
-    <OptionsSetting value="true" id="Status" />
-    <OptionsSetting value="true" id="Edit" />
-    <ConfirmationsSetting value="0" id="Add" />
-    <ConfirmationsSetting value="0" id="Remove" />
+    <option name="x" value="255" />
+    <option name="y" value="52" />
+    <option name="width" value="1406" />
+    <option name="height" value="854" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -96,95 +263,81 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="digitalfortress" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="digitalfortress" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="digitalfortress" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="digitalfortress" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="digitalfortress" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="database" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="digitalfortress" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="digitalfortress" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="digitalfortress" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="digitalfortress" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Http" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="digitalfortress" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="digitalfortress" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Http" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Controllers" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
+          <expand>
+            <path>
+              <item name="digitalfortress" type="b2602c69:ProjectViewProjectNode" />
+              <item name="digitalfortress" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="digitalfortress" type="b2602c69:ProjectViewProjectNode" />
+              <item name="digitalfortress" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="digitalfortress" type="b2602c69:ProjectViewProjectNode" />
+              <item name="digitalfortress" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Http" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="digitalfortress" type="b2602c69:ProjectViewProjectNode" />
+              <item name="digitalfortress" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Http" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Controllers" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="digitalfortress" type="b2602c69:ProjectViewProjectNode" />
+              <item name="digitalfortress" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Mail" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="digitalfortress" type="b2602c69:ProjectViewProjectNode" />
+              <item name="digitalfortress" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="config" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="digitalfortress" type="b2602c69:ProjectViewProjectNode" />
+              <item name="digitalfortress" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="database" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="digitalfortress" type="b2602c69:ProjectViewProjectNode" />
+              <item name="digitalfortress" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="database" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="migrations" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="digitalfortress" type="b2602c69:ProjectViewProjectNode" />
+              <item name="digitalfortress" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="resources" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="digitalfortress" type="b2602c69:ProjectViewProjectNode" />
+              <item name="digitalfortress" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="resources" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="digitalfortress" type="b2602c69:ProjectViewProjectNode" />
+              <item name="digitalfortress" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="resources" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="layouts" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="digitalfortress" type="b2602c69:ProjectViewProjectNode" />
+              <item name="digitalfortress" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="storage" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+          </expand>
+          <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
       <pane id="Scratches" />
     </panes>
   </component>
@@ -192,8 +345,31 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php.debug" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
+    <property name="nodejs_interpreter_path" value="/usr/local/bin/node" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="SearchEverywhereHistoryKey" value="route&#9;FILE&#9;file:///var/www/html/open_source/digitalfortress/app/Http/routes.php&#10;routes&#9;FILE&#9;file:///var/www/html/open_source/digitalfortress/app/Http/routes.php" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
   </component>
   <component name="RunManager">
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <envs />
+    </configuration>
     <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
       <method />
     </configuration>
@@ -206,15 +382,6 @@
       <method />
     </configuration>
     <configuration default="true" type="PhpLocalRunConfigurationType" factoryName="PHP Console">
-      <method />
-    </configuration>
-    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
-      <node-interpreter>project</node-interpreter>
-      <node-options />
-      <gulpfile />
-      <tasks />
-      <arguments />
-      <envs />
       <method />
     </configuration>
     <configuration default="true" type="js.build_tools.npm" factoryName="npm">
@@ -240,35 +407,40 @@
       <updated>1483014945057</updated>
       <workItem from="1483014949148" duration="2091000" />
       <workItem from="1483020526149" duration="286000" />
+      <workItem from="1507460762685" duration="6394000" />
+      <workItem from="1507468646291" duration="3280000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2377000" />
+    <option name="totallyTimeSpent" value="12051000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="24" width="1366" height="679" extended-state="6" />
+    <frame x="255" y="52" width="1406" height="854" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24963397" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2492647" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26206896" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39933994" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39933994" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
@@ -280,42 +452,264 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/../info.php">
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/MainController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
-          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+        <state relative-caret-position="1098">
+          <caret line="67" column="19" lean-forward="false" selection-start-line="67" selection-start-column="19" selection-end-line="67" selection-end-column="19" />
+          <folding>
+            <element signature="e#40#68#0#PHP" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/quiz.php">
+    <entry file="file://$PROJECT_DIR$/app/users.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="180">
+          <caret line="10" column="48" lean-forward="true" selection-start-line="10" selection-start-column="48" selection-end-line="10" selection-end-column="48" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/quizController.php">
+    <entry file="file://$PROJECT_DIR$/app/Http/routes.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="10" column="44" selection-start-line="10" selection-start-column="44" selection-end-line="10" selection-end-column="44" />
+        <state relative-caret-position="720">
+          <caret line="49" column="17" lean-forward="true" selection-start-line="49" selection-start-column="17" selection-end-line="49" selection-end-column="34" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/leaderboardController.php">
+    <entry file="file://$PROJECT_DIR$/resources/views/activation-failed.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="21" column="14" lean-forward="true" selection-start-line="21" selection-start-column="14" selection-end-line="21" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/loginregister.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="414">
+          <caret line="23" column="44" lean-forward="true" selection-start-line="23" selection-start-column="44" selection-end-line="23" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/resend-activation.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="12" column="35" lean-forward="true" selection-start-line="12" selection-start-column="35" selection-end-line="12" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/activation-success.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="20" column="43" lean-forward="false" selection-start-line="20" selection-start-column="43" selection-end-line="20" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/dashboard.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/landing.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2178">
+          <caret line="121" column="54" lean-forward="false" selection-start-line="121" selection-start-column="45" selection-end-line="121" selection-end-column="54" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/HomeController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4176">
+          <caret line="241" column="0" lean-forward="true" selection-start-line="241" selection-start-column="0" selection-end-line="241" selection-end-column="0" />
+          <folding>
+            <element signature="e#40#71#0#PHP" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/MainController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="66" column="26" selection-start-line="66" selection-start-column="26" selection-end-line="66" selection-end-column="26" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#40#68#0#PHP" expanded="true" />
+            <element signature="e#40#68#0#PHP" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../info.php" />
+    <entry file="file://$PROJECT_DIR$/app/quiz.php" />
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/quizController.php" />
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/leaderboardController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/MainController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1098">
+          <caret line="67" column="19" lean-forward="false" selection-start-line="67" selection-start-column="19" selection-end-line="67" selection-end-column="19" />
+          <folding>
+            <element signature="e#40#68#0#PHP" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/app.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="50" column="33" lean-forward="false" selection-start-line="50" selection-start-column="33" selection-end-line="50" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/mail.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="56" column="87" lean-forward="false" selection-start-line="56" selection-start-column="71" selection-end-line="56" selection-end-column="87" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Mail/AccountActivation.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="237">
+          <caret line="26" column="0" lean-forward="true" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+          <folding>
+            <element signature="e#28#42#0#PHP" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/users.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="10" column="48" lean-forward="false" selection-start-line="10" selection-start-column="48" selection-end-line="10" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/emails/account-activation.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="11" column="11" lean-forward="true" selection-start-line="11" selection-start-column="11" selection-end-line="11" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/landing.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2178">
+          <caret line="121" column="54" lean-forward="false" selection-start-line="121" selection-start-column="45" selection-end-line="121" selection-end-column="54" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/activation.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="19" column="49" lean-forward="true" selection-start-line="19" selection-start-column="49" selection-end-line="19" selection-end-column="49" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/activation-failed.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="18" column="16" lean-forward="false" selection-start-line="18" selection-start-column="16" selection-end-line="18" selection-end-column="92" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="22" column="46" lean-forward="false" selection-start-line="22" selection-start-column="29" selection-end-line="22" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/routes.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="321">
+          <caret line="49" column="17" lean-forward="false" selection-start-line="49" selection-start-column="17" selection-end-line="49" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/loginregister.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="70" column="28" lean-forward="false" selection-start-line="70" selection-start-column="28" selection-end-line="70" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/resend-activation.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="14" column="26" lean-forward="true" selection-start-line="14" selection-start-column="26" selection-end-line="14" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/dashboard.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-449">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/HomeController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="343">
+          <caret line="109" column="52" lean-forward="true" selection-start-line="109" selection-start-column="52" selection-end-line="109" selection-end-column="52" />
+          <folding>
+            <element signature="e#40#71#0#PHP" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/activation-success.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="14" column="71" lean-forward="false" selection-start-line="14" selection-start-column="71" selection-end-line="14" selection-end-column="71" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.env">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="7" column="12" lean-forward="false" selection-start-line="7" selection-start-column="12" selection-end-line="7" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="4" column="0" lean-forward="true" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.env.example">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="522">
+          <caret line="29" column="0" lean-forward="true" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>

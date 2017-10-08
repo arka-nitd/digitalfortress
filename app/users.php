@@ -8,4 +8,6 @@ class users extends Model {
 
     protected $table = 'users';
 
+    protected $fillable = ['activation_status'];
+
 }

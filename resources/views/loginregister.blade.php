@@ -33,6 +33,12 @@
             <div class="card-content">
 
                 <div id="loginbox">
+                    <div class="text-center">
+                        @if($errors->any())
+                            <span class="text-center text-danger">{{$errors->first()}}</span>
+                        @endif
+                    </div>
+
                     <form method="post" action="/login">
                         <input type="hidden" name="_token" value="{{ csrf_token() }}">
                         <div class="input-group">
@@ -60,6 +66,11 @@
                         <br>
                         <div class="text-center">
                         <p>New User !! <a id="registerform" href="javascript: showregisterform();">Register Here</a></p>
+                        </div>
+
+                        <br>
+                        <div class="card-footer">
+                            <p class="text-center">Having trouble activating account? <br> <a href="/resend-activation">Resend Activation Email</a></p>
                         </div>
                     </form>
                 </div>

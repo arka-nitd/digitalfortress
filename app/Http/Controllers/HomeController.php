@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Mail\AccountActivation;
 use Illuminate\Http\Request;
 
 use App\Http\Requests;
@@ -90,17 +91,23 @@ class HomeController extends Controller
     {
         $email = $requests->input('email');
         $password = $requests->input('password');
-        $profile = users::where('email',$email)->first();
+        $profile = users::where('email',$email)->where('activation_status', 1)->first();
         if(!empty($profile))
         {
             /*
             Add your code here. The code must sent a verification code to users mail using smtp. store the user's record in
             a separate table. whenever he/she logs in redirect to the enter otp page. after it is verified delete the record from
             that table and push it in the final verified users table
-            */ 
-            session()->put(['name'=>$profile['username'],'email'=>$profile['email']]);
+            */
+            if (Hash::check($password, $profile->password)){
+                session()->put(['name'=>$profile['username'],'email'=>$profile['email']]);
+                return redirect('dashboard');
+            }else{
+                return view('loginregister')->withErrors(['msg' => 'Incorrect Email or Password.']);
+
+            }
         }
-        return redirect('dashboard');
+        return view('loginregister')->withErrors(['msg' => 'Incorrect Email or you haven\'t activated your account.']);
     }
     public function register(Request $requests)
     {
@@ -121,14 +128,20 @@ class HomeController extends Controller
         $newuser->email = $requests->input('email');
         $newuser->username = $requests->input('username');
         $newuser->password = Hash::make($requests->input('password'));
-        
+        $newuser->code = $this->generateCode();
+
+        /*
+         * Upon registeration send a mail to the User
+         *
+         * */
+        $this->sendEmail($newuser);
+
         $newuser->save();
         $this->leaderboard_entry($newuser);
-        
-        session()->put(['name'=>$newuser['username'],'email'=>$newuser['email']]);
+
         $message = 'BREAK A LEG !!';
-        
-        return view('dashboard')->with(['email'=>$newuser['email'],'name'=>$newuser['username'],'newusertext'=>$message,'tab'=>1]);
+
+        return view('activation')->with(['username' => $newuser->username, 'email' => $newuser->email ]);
     }
 
     public function sociallogin($id)
@@ -196,4 +209,46 @@ class HomeController extends Controller
         else
             return 3;
     }
+
+
+    public function sendEmail($user){
+        \Mail::to($user)->send(new AccountActivation($user));
+    }
+
+    public function generateCode(){
+        return hexdec(uniqid());
+    }
+
+    public function activateAccount($email,$code){
+
+        $user = users::where('email', $email)->where('code', $code)->first();
+
+        if ($user){
+            $user->update(['activation_status' => 1]);
+            return view('activation-success');
+        }else{
+            return view('activation-failed');
+        }
+    }
+
+    public function resendActivation(Request $request){
+//        return $request->email;
+        $user = users::where('email', $request->email)->first();
+
+        if ($user){
+            if ($user->activation_status == 1){
+                return view('resend-activation')->withErrors(['msg' => 'Account has already been activated. Try to login']);
+            }else{
+                $this->sendEmail($user);
+                return view('activation')->with(['username' => $user->username, 'email' => $user->email ]);
+            }
+        }else{
+            return view('resend-activation')->withErrors(['msg' => 'Invalid email or email does not exist']);
+        }
+    }
+
+    public function getResendActivation(){
+        return view('resend-activation');
+    }
 }
+
