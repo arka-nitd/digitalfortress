@@ -37,6 +37,10 @@
                             <td>6</td>
                             <td>Each round will have a particular theme and questions will be based on that.</td>
                         </tr>
+                        <tr>
+                            <td>7</td>
+                            <td>The answers are intuitive. Multiple word answers have spaces between them. All answers are lower case letters</td>
+                        </tr>
                     </tbody>
                 </table>
             </div>

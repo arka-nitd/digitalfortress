@@ -44,21 +44,9 @@
                 <div class="collapse navbar-collapse" id="example" >
                     <ul class="nav navbar-nav navbar-right">
                         <li>
-                            <a href="#">
+                            <a href="https://www.facebook.com/nitdgplug">
                             <i class="fa fa-facebook-square"></i>
                             Like
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                            <i class="fa fa-twitter"></i>
-                            Tweet
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                            <i class="fa fa-pinterest"></i>
-                            Pin
                             </a>
                         </li>
                     </ul>
@@ -82,7 +70,39 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div><footer class="footer">
+                <div class="container">
+                    <nav class="pull-left">
+                        <ul>
+                            <li>
+                                <a href="#">
+                                Home
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                Blog
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="social-area pull-right">
+                        <a class="btn btn-social btn-facebook btn-simple">
+                        <i class="fa fa-facebook-square"></i>
+                        </a>
+                        <a class="btn btn-social btn-twitter btn-simple">
+                        <i class="fa fa-twitter"></i>
+                        </a>
+                        <a class="btn btn-social btn-pinterest btn-simple">
+                        <i class="fa fa-pinterest"></i>
+                        </a>
+                    </div>
+                    <div class="copyright">
+                        &copy; 2017 <a href="http://abc.xyz">GNU Linux Users' Group</a>
+                    </div>
+                </div>
+            </footer>
+
             <div class="section section-gray section-clients">
                 <div class="container text-center">
                     <h4 class="mainfont2sm">Welcome to the Digital Fortress</h4>
@@ -95,16 +115,14 @@
             <div class="section section-presentation">
                 <div class="container">
                     <div class="row">
-                        <div class="col-md-7">
+                        <div class="col-md-6">
                             <div class="description" >
-                                <h4 class="mainfont2md" style="color:chocolate;">Lots of Prizes to be Won</h4>
-                                
-                                <h3>Winner gets &#8377; 5000</h3>
-                                <h3>Runner up gets &#8377; 1500</h3>
+                                <h4 class="mainfont2md" style="color:chocolate;">Lots of Prizes to be Won which includes cash prizes, tshirts and other goodies</h4>
                             </div>
                         </div>
-                        <div class="col-md-5 hidden-xs">
-                            <img src="{{ url('assets/img/prize.png') }}" />
+
+                        <div class="col-md-6">
+                            <img src="{{ url('assets/img/gifts.jpg') }}" />
                         </div>
                     </div>
                 </div>
@@ -126,8 +144,6 @@
                     </div>
                 </div>
             </div>
-            
-            
         </div>
 
     </body>
