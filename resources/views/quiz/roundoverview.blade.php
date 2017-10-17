@@ -216,9 +216,11 @@ $(document).ready(function(){
                 url:'/verifyans',
                 data:{
                     'qno':qno,
-                    'ans': ans
+                    'ans': ans,
+                    'rno':'{{$round}}'
                 },
                 success:function(data){
+                    console.log(data);
                     if(data=="true")
                     {
                         $("#questionBox").modal('toggle');

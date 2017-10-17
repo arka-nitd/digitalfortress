@@ -57,7 +57,9 @@ class MainController extends Controller
     public function verifyans(Request $requests)
     {
         $qno = $requests->input('qno');
-        $ques = question::where('question_no',$qno)->select(['answer','round_id'])->first();
+        $ques = question::where('question_no', $qno)
+                        ->where('round_id', $requests->input('rno'))
+                        ->select(['answer','round_id'])->first();
         $userans = $requests->input('ans');
 
         if($ques['answer'] == $userans){
