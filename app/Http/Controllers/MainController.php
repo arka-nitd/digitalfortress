@@ -61,7 +61,8 @@ class MainController extends Controller
                         ->where('round_id', $requests->input('rno'))
                         ->select(['answer','round_id'])->first();
         $userans = $requests->input('ans');
-
+        $userans = preg_replace('/[^A-Za-z0-9\-]/', '', $userans);
+        $userans = strtolower($userans);
         if($ques['answer'] == $userans){
             solved::firstOrCreate(['email'=>session('email'),'question_no'=>$qno, 'round_id'=>$ques['round_id']]);
             return "true";
@@ -76,6 +77,8 @@ class MainController extends Controller
         $maxround = round::all()->max('round_id');
         $ans = round::where('round_id',$rno)->select('answer')->first()['answer'];
         $userans = $requests->input('ans');
+        $userans = preg_replace('/[^A-Za-z0-9\-]/', '', $userans);
+        $userans = strtolower($userans);
         if($ans == $userans){
             $rno++;
             leaderboard::where('email',session('email'))->update(['round_id'=>$rno]);

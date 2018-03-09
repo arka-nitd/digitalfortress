@@ -171,9 +171,12 @@ $(document).ready(function(){
         headers: { 'X-CSRF-TOKEN': $('meta[name="csrf_token"]').attr('content') }
     });
 
-     
+     var x = '{{ json_encode($question) }}';
+     x=x.replace(/&lt;br&gt;/g,"").replace(/&quot;/g,'"');
+
+    var y = JSON.parse(x);
     
-    
+
     map = new GMaps({div: '#map',lat:23.5501761,lng:87.2875451});
     showGoogleMap(map);
 
@@ -190,7 +193,7 @@ $(document).ready(function(){
     $('table>tbody>tr .question').click(function() {        
         var qno = $(this).data('qno');
 
-        var y = JSON.parse('{{ json_encode($question) }}'.replace(/&quot;/g,'"'));
+        
         var qno = $(this).data('qno');
         var key=-1;
         $(y).each(function(index, data){

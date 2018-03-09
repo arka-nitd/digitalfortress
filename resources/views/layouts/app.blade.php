@@ -50,6 +50,7 @@
                                 <p>Round Overview</p>
                             </a>
                         </li>
+                        
                     @else
                         <li class="{{ (isset($tab)&&$tab==1)?'active':''}}">
                             <a href="dashboard">
@@ -79,7 +80,6 @@
                             <p>Hints</p>
                         </a>
                     </li>
-
                 </ul>
             </div>
         </div>

@@ -152,10 +152,9 @@ class HomeController extends Controller
 
     public function socialcallback(Request $requests, $id)
     {
-       
-        $user = Socialite::driver($id)->user();
+        $user = Socialite::driver($id)->stateless()->user();
         $email = $user->getEmail();
-        
+     
         $profile = users::where('email',$email)->first();
         $flag=0;
         $password='';
