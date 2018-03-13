@@ -3,21 +3,25 @@
 
 @font-face{
   font-family: 'font2';
-  src: url('../fonts/font2.ttf');
+  src: url('../fonts/font.otf');
+}
+
+.navbar-header{
+  width:100%;
 }
 
 .mainfont2sm{
   font-family: 'font2';
-  font-size: 40px;
+  font-size: 30px;
 }
 .mainfont2md{
   font-family: 'font2';
-  font-size: 60px;
+  font-size: 50px;
 }
 
 .mainfont2 {
   font-family: 'font2';
-  font-size: 120px;
+  font-size: 100px;
 }
 
 .no-gutter [class*="-6"] {
@@ -1546,6 +1550,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#de8e0009', e
     }
     #video_background{
         display: none;
+    }
+
+    .logo-container{
+      display: none;
     }
 
 }

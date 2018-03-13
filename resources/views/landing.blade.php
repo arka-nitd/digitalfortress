@@ -34,8 +34,12 @@
                             <div class="logo">
                                 <img src="{{ url('assets/img/new_logo.png') }}" alt="GLUG Logo">
                             </div>
-                            <div class="brand">
-                                
+                        </div>
+                    </a>
+                    <a href="http://www.avskr.in">
+                        <div class="logo-container">
+                            <div class="logo">
+                                <img src="{{ url('assets/img/avskr.jpg') }}" alt="Aavishkar Logo">
                             </div>
                         </div>
                     </a>
@@ -57,7 +61,7 @@
         <div class="wrapper">
             <div class="parallax filter-gradient gray" data-color="blue">
                 <div class="parallax-background">
-                    <img class="parallax-background-image" src="{{ url('assets/img/Hogwartscastle.jpg') }}">
+                    <img class="parallax-background-image" src="{{ url('assets/img/2.jpg') }}">
                 </div>
                 <div class= "container">
                     <div class="row">
@@ -98,7 +102,7 @@
                         </a>
                     </div>
                     <div class="copyright">
-                        &copy; 2017 <a href="http://abc.xyz">GNU Linux Users' Group</a>
+                        &copy; 2018 <a href="http://nitdgplug.org">Made with &hearts; by GNU/Linux Users' Group</a>
                     </div>
                 </div>
             </footer>
@@ -129,7 +133,7 @@
             </div>
             <div class="parallax filter-gradient orange" data-color="blue">
                 <div class="parallax-background">
-                    <img class="parallax-background-image" src="{{ url('assets/img/Hogwartscastle.jpg') }}">
+                    <img class="parallax-background-image" src="{{ url('assets/img/2.jpg') }}">
                 </div>
                 <div class= "container">
                     <div class="row">

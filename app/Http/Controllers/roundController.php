@@ -25,6 +25,7 @@ class roundController extends CrudController{
 		$this->grid->add('round_name', 'Round Name');
 		$this->grid->add('question', 'Question');
 		$this->grid->add('answer', 'Answer');
+		$this->grid->add('status', 'Status');
 		$this->addStylesToGrid();
 
  
@@ -46,6 +47,7 @@ class roundController extends CrudController{
 		$this->edit->add('round_name', 'Round Name','text')->rule('required');
 		$this->edit->add('question', 'Question','text')->rule('required');
 		$this->edit->add('answer', 'Answer','text')->rule('required');
+		$this->edit->add('status', 'Status','text')->rule('required');
 
 		
         return $this->returnEditView();

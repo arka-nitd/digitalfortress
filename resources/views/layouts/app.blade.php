@@ -33,7 +33,7 @@
                     <strong>Digital Fortress</strong>
                 </h4>
             </div>
-
+            
             <div class="sidebar-wrapper">
                 <ul class="nav">
 

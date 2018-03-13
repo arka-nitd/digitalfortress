@@ -21,8 +21,15 @@ class MainController extends Controller
         }
         $currentRound = leaderboard::where('email',session('email'))->first()['round_id'];
         $maxround = round::all()->max('round_id');
+        
         if($currentRound>$maxround)
-            return view('quiz/winner');
+            return view('quiz/winner')->with(array('tab'=>2));
+        
+        $status = round::where('round_id',$currentRound)->first()['status'];
+        
+        if($status == 0){
+            return view('quiz/locked')->with(array('tab'=>2));;
+        }
         $question = question::where('round_id',$currentRound)->select(['question_no','title','question','position'])->get()->toArray();
         usort($question, function($a, $b){ return $a['question_no']>=$b['question_no']; });
         $solved = solved::where(['email'=>session('email'),'round_id'=>$currentRound])->get()->toArray();
