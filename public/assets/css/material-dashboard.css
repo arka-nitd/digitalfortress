@@ -681,6 +681,13 @@ h2.title {
   padding: 25px 12px;
   min-height: calc(100% - 123px);
 }
+.register-content {
+    padding-top: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    margin-top: 0;
+}
 .main-panel > .footer {
   border-top: 1px solid #e7e7e7;
 }

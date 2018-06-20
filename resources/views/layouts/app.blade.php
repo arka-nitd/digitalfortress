@@ -116,7 +116,7 @@
                 </div>
             </nav>
 
-            <div class="content" style="background-image: url('{{ url('assets/img/hp.png')}}'); background-repeat:no-repeat; background-position: right center; ">
+            <div class="register-content content" style="background-image: url('{{ url('assets/img/hp.png')}}'); background-repeat:no-repeat; background-position: right center; ">
                 <div class="container-fluid">
                     <div class="row">
                         @yield('content')
