@@ -23,12 +23,12 @@
             <div class="container">
                 <!-- Brand and toggle get grouped for better mobile display -->
                 <div class="navbar-header">
-                    <button id="menu-toggle" type="button" class="navbar-toggle" data-toggle="collapse" data-target="#example">
+                    <!-- <button id="menu-toggle" type="button" class="navbar-toggle" data-toggle="collapse" data-target="#example">
                     <span class="sr-only">Toggle navigation</span>
                     <span class="icon-bar bar1"></span>
                     <span class="icon-bar bar2"></span>
                     <span class="icon-bar bar3"></span>
-                    </button>
+                    </button> -->
                     <a href="http://www.nitdgplug.org">
                         <div class="logo-container">
                             <div class="logo">
@@ -67,9 +67,9 @@
                     <div class="row">
                         <div class="col-md-10 col-md-offset-1">
                             <div class="parallax description">
-                                <h1 class="mainfont2">DIGITAL FORTRESS</h1>
+                                <h1 class="mainfont2" style="font-size:7vw;">DIGITAL FORTRESS</h1>
                                 <br><br><br><br>
-                                <h4 class="mainfont2sm" align="right">get ready to be puzzled !!</h4>
+                                <h4 class="mainfont2sm" align="right" width="183">get ready to be puzzled !!</h4>
                             </div>
                         </div>
                     </div>

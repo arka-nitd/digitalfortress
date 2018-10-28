@@ -853,7 +853,7 @@ a:focus, a:active {
     overflow: hidden;
     border-radius: 50%;
     border: 1px solid #333333;
-    width: 80px; 
+    width: 4.5vw; 
     float: left;
 }
 
@@ -1551,9 +1551,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#de8e0009', e
     #video_background{
         display: none;
     }
-
-    .logo-container{
-      display: none;
+    .logo-container .logo{
+      width: 10vw;
     }
 
 }
