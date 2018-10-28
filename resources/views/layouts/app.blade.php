@@ -116,7 +116,7 @@
                 </div>
             </nav>
 
-            <div class="content" style="background-image: url('{{ url('assets/img/hp.png')}}'); background-repeat:no-repeat; background-position: right center; ">
+            <div class="content" style="background-image: url('{{ url('assets/img/hp.png')}}'); background-repeat:no-repeat; background-position: center; background-size: cover; ">
                 <div class="container-fluid">
                     <div class="row">
                         @yield('content')
@@ -138,7 +138,7 @@
 
    
     <!-- Material Dashboard javascript methods -->
-    <script src="{{ url('assets/js/material-dashboard.js') }}"></script>
+    <script src="{{ url('assets/js/material-dashboard.js') }}"></script>layouts.app
     
     @yield('myjs')
 

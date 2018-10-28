@@ -9,20 +9,20 @@
             <div class="card-header text-center" data-background-color="blue">
                 <h3 class="card-title">Login with</h3>
                 <div class="social-line row">
-                    <div class="col-md-2 col-sm-offset-3">
+                    <div class="col-md-4 col-sm-offset-2">
                     <a href="login/facebook" class="btn btn-just-icon btn-simple">
                         <i class="fa fa-facebook-square fa-2x"></i>
                     </a>
                     </div>
-                    <div class="col-md-2">
+                    <div class="col-md-4">
                     <a href="login/github" class="btn btn-just-icon btn-simple">
                         <i class="fa fa-github fa-2x"></i>
                     </a>
                     </div>
                     <div class="col-md-2">
-                    <a href="login/google" class="btn btn-just-icon btn-simple">
+                    <!-- <a href="login/google" class="btn btn-just-icon btn-simple">
                         <i class="fa fa-google-plus fa-2x"></i>
-                    </a>
+                    </a> -->
                     </div>
                 </div>
             </div>
