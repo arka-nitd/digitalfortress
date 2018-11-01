@@ -12,7 +12,7 @@
 				</div>
 				<div class="card-footer">
 					<div class="stats text-center">
-						<i class="material-icons">games</i><a href="/round_overview">  Go to the Round {{ $stats[$key]['round_id'] }}</a>
+						<i class="material-icons">games</i><a href="/round_overview">  ff to the Round {{ $stats[$key]['round_id'] }}</a>
 					</div>
 				</div>
 			</div>
