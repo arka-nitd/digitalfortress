@@ -100,13 +100,11 @@ class HomeController extends Controller
             $llb[$incI]['name']=$value[1];
             $llb[$incI]['rank']=$incI+1;
             $llb[$incI]['score']=$value[2];
+            $incI++;
         }
 
         $encodedSku = json_encode($lboard);
-        print('<pre>');
-        print_r($encodedSku);
-        print('</pre>');
-
+        echo $encodedSku;
     }
 
     public function login(Request $requests)
