@@ -36,6 +36,7 @@ Route::group(['middleware' => ['web']], function () {
     Route::get('/rules', 'HomeController@rules');
     Route::get('/hints', 'HomeController@hints');
     Route::get('/leaderboard', 'HomeController@lboard');
+    Route::get('/api/scoreboard', 'HomeController@scboard');
 
 
     Route::get('/round_overview', 'MainController@roundoverview');

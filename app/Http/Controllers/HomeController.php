@@ -87,6 +87,28 @@ class HomeController extends Controller
         return view('quiz/leaderboard')->with(['tab'=>4,'sz'=>$sz,'stand'=>$lboard,'name'=>session('name'),'dashname'=>'Leaderboard']);
     }
 
+    public function scboard()
+    {
+        $lboard = leaderboard::all()->toArray();
+        $sz = count($lboard);
+        $llb=array();
+        $incI=0;
+        usort($lboard, array($this,"sortcomp"));
+        foreach ($lboard as $key => $value) {
+            $llb[$incI]['email']=$value[0];
+            $llb[$incI]['id']=$incI+1;
+            $llb[$incI]['name']=$value[1];
+            $llb[$incI]['rank']=$incI+1;
+            $llb[$incI]['score']=$value[2];
+        }
+
+        $encodedSku = json_encode($lboard);
+        print('<pre>');
+        print_r($encodedSku);
+        print('</pre>');
+
+    }
+
     public function login(Request $requests)
     {
         $email = $requests->input('email');
